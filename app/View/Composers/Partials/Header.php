@@ -37,8 +37,8 @@ class Header extends Composer
                 'position'  => stage_get_fallback('header.desktop.position'), // fixed, sticky, relative, ...
                 'align'     => stage_get_fallback('header.desktop.align'), // fixed, sticky, relative, ...
                 'fullwidth' => stage_get_fallback('header.desktop.fullwidth') ? 'fullwidth' : 'boxed',
-                'padding-x' => 'sm:px-' . stage_get_fallback('header.desktop.padding-x'),
-                'padding-y' => 'sm:py-' . stage_get_fallback('header.desktop.padding-y'),
+                'padding-x' => 'sm:px-' . stage_get_fallback('header.desktop.padding-x', 0),
+                'padding-y' => 'sm:py-' . stage_get_fallback('header.desktop.padding-y', 0),
             ),
             'mobile'       => array(
                 'layout'   => stage_get_fallback('header.mobile.layout', false, true), // fixed, sticky, relative, ...
