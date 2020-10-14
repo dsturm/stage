@@ -1,2 +1,4 @@
 /.circleci export-ignore
 /.gitattributes export-ignore
+/composer.lock -diff
+/yarn.lock -diff
