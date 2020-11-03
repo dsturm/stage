@@ -16,6 +16,12 @@ const aspectRatio = require('tailwindcss-aspect-ratio');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+    // defaultLineHeights: true,
+    // standardFontWeights: true
+  },
   purge: {
     content: [
       './index.php',
@@ -25,8 +31,7 @@ module.exports = {
       './resources/assets/scripts/**/*.js',
     ],
     options: {
-      whitelist: [
-      ],
+      whitelist: [],
       whitelistPatterns: [
         /^z(-.*)?$/,
         /^bg(-.*)?$/,
@@ -45,7 +50,6 @@ module.exports = {
     },
   },
   theme: {
-
     /*
     |-----------------------------------------------------------------------------
     | Screens                      https://tailwindcss.com/docs/responsive-design
@@ -56,13 +60,12 @@ module.exports = {
     */
 
     screens: {
-      'sm': '576px',
-      'md': '768px',
-      'lg': '992px',
-      'xl': '1200px',
-      'xxl': '1600px',
+      sm: '576px',
+      md: '768px',
+      lg: '992px',
+      xl: '1200px',
+      xxl: '1600px',
     },
-
 
     /*
     |-----------------------------------------------------------------------------
@@ -76,24 +79,24 @@ module.exports = {
     */
 
     colors: {
-      'inherit': 'inherit',
-      'transparent': 'transparent',
+      inherit: 'inherit',
+      transparent: 'transparent',
 
-      'body':       'var(--color-body)',
+      body: 'var(--color-body)',
 
-      'link':       'var(--color-link)',
-      'hover':      'var(--color-hover)',
+      link: 'var(--color-link)',
+      hover: 'var(--color-hover)',
 
-      'copy':       'var(--color-copy)',
-      'heading':    'var(--color-heading)',
+      copy: 'var(--color-copy)',
+      heading: 'var(--color-heading)',
 
-      'primary':    'var(--color-primary)',
-      'secondary':  'var(--color-secondary)',
+      primary: 'var(--color-primary)',
+      secondary: 'var(--color-secondary)',
 
-      'black':      'var(--color-black)',
-      'white':      'var(--color-white)',
+      black: 'var(--color-black)',
+      white: 'var(--color-white)',
 
-      'gray': {
+      gray: {
         100: 'var(--color-gray-100)',
         200: 'var(--color-gray-200)',
         300: 'var(--color-gray-300)',
@@ -124,7 +127,6 @@ module.exports = {
       },
     },
 
-
     /*
     |-----------------------------------------------------------------------------
     | Default Spacing             https://tailwindcss.com/docs/customizing-spacing
@@ -137,7 +139,7 @@ module.exports = {
     */
 
     spacing: {
-      'px': '1px',
+      px: '1px',
       '0': '0',
       '1': '0.25rem',
       '2': '0.5rem',
@@ -156,13 +158,12 @@ module.exports = {
       '48': '12rem',
       '56': '14rem',
       '64': '16rem',
-      'half': '50%',
-      'full': '100%',
+      half: '50%',
+      full: '100%',
       'half-block-spacing': 'calc( var( --block-spacing ) / 2 )',
       'block-spacing': 'var( --block-spacing )',
-      'gutter': 'var( --gutter )',
+      gutter: 'var( --gutter )',
     },
-
 
     /*
     |-----------------------------------------------------------------------------
@@ -176,11 +177,11 @@ module.exports = {
     */
 
     sizes: theme => ({
-      'xs': '20rem',
-      'sm': '30rem',
-      'md': '40rem',
-      'lg': '50rem',
-      'xl': '60rem',
+      xs: '20rem',
+      sm: '30rem',
+      md: '40rem',
+      lg: '50rem',
+      xl: '60rem',
       '2xl': '70rem',
       '3xl': '80rem',
       '4xl': '90rem',
@@ -210,10 +211,10 @@ module.exports = {
       '9/12': '75%',
       '10/12': '83.33333%',
       '11/12': '91.66667%',
-      'full': '100%',
-      'half': '50%',
-      'auto': 'auto',
-      'none': 'none',
+      full: '100%',
+      half: '50%',
+      auto: 'auto',
+      none: 'none',
       ...theme('spacing'),
     }),
 
@@ -227,7 +228,6 @@ module.exports = {
     */
 
     textColor: theme => theme('colors'),
-
 
     /*
     |-----------------------------------------------------------------------------
@@ -251,9 +251,9 @@ module.exports = {
     */
 
     fontFamily: {
-      'heading': 'var(--heading-font-family)',
-      'copy': 'var(--copy-font-family)',
-      'sans': [
+      heading: 'var(--heading-font-family)',
+      copy: 'var(--copy-font-family)',
+      sans: [
         'Inter',
         'system-ui',
         'BlinkMacSystemFont',
@@ -268,7 +268,7 @@ module.exports = {
         'Helvetica Neue',
         'sans-serif',
       ],
-      'serif': [
+      serif: [
         'Constantia',
         'Lucida Bright',
         'Lucidabright',
@@ -280,7 +280,7 @@ module.exports = {
         'Georgia',
         'serif',
       ],
-      'mono': [
+      mono: [
         'Menlo',
         'Monaco',
         'Consolas',
@@ -289,7 +289,6 @@ module.exports = {
         'monospace',
       ],
     },
-
 
     /*
     |-----------------------------------------------------------------------------
@@ -302,17 +301,16 @@ module.exports = {
     */
 
     fontSize: {
-      'xs':   'var(--font-size-xs)',        // 12px
-      'sm':   'var(--font-size-sm)',        // 14px
-      'base': 'var(--font-size-base)',      // 16px
-      'lg':   'var(--font-size-lg)',        // 18px
-      'xl':   'var(--font-size-xl)',        // 20px
-      '2xl':  'var(--font-size-2-xl)',       // 24px
-      '3xl':  'var(--font-size-3-xl)',       // 30px
-      '4xl':  'var(--font-size-4-xl)',       // 36px
-      '5xl':  'var(--font-size-5-xl)',       // 48px
+      xs: 'var(--font-size-xs)', // 12px
+      sm: 'var(--font-size-sm)', // 14px
+      base: 'var(--font-size-base)', // 16px
+      lg: 'var(--font-size-lg)', // 18px
+      xl: 'var(--font-size-xl)', // 20px
+      '2xl': 'var(--font-size-2-xl)', // 24px
+      '3xl': 'var(--font-size-3-xl)', // 30px
+      '4xl': 'var(--font-size-4-xl)', // 36px
+      '5xl': 'var(--font-size-5-xl)', // 48px
     },
-
 
     /*
     |-----------------------------------------------------------------------------
@@ -332,7 +330,6 @@ module.exports = {
       wider: '0.1em',
       widest: '0.2em',
     },
-
 
     /*
     |-----------------------------------------------------------------------------
@@ -363,11 +360,10 @@ module.exports = {
     */
 
     width: theme => ({
-      'screen': '100vw',
+      screen: '100vw',
       'half-screen': '50vw',
       ...theme('sizes'),
     }),
-
 
     /*
     |-----------------------------------------------------------------------------
@@ -379,11 +375,10 @@ module.exports = {
     */
 
     height: theme => ({
-      'screen': '100vh',
+      screen: '100vh',
       'half-screen': '50vh',
       ...theme('sizes'),
     }),
-
 
     /*
     |-----------------------------------------------------------------------------
@@ -395,11 +390,10 @@ module.exports = {
     */
 
     minWidth: theme => ({
-      'screen': '100vw',
+      screen: '100vw',
       'half-screen': '50vw',
       ...theme('sizes'),
     }),
-
 
     /*
     |-----------------------------------------------------------------------------
@@ -411,11 +405,10 @@ module.exports = {
     */
 
     minHeight: theme => ({
-      'screen': '100vh',
+      screen: '100vh',
       'half-screen': '50vh',
       ...theme('sizes'),
     }),
-
 
     /*
     |-----------------------------------------------------------------------------
@@ -427,11 +420,10 @@ module.exports = {
     */
 
     maxWidth: theme => ({
-      'screen': '100vw',
+      screen: '100vw',
       'half-screen': '50vw',
       ...theme('sizes'),
     }),
-
 
     /*
     |-----------------------------------------------------------------------------
@@ -443,11 +435,10 @@ module.exports = {
     */
 
     maxHeight: theme => ({
-      'screen': '100vh',
+      screen: '100vh',
       'half-screen': '50vh',
       ...theme('sizes'),
     }),
-
 
     /*
     |-----------------------------------------------------------------------------
@@ -459,10 +450,9 @@ module.exports = {
     */
 
     padding: theme => ({
-      'initial': 'initial',
+      initial: 'initial',
       ...theme('spacing'),
     }),
-
 
     /*
     |-----------------------------------------------------------------------------
@@ -475,11 +465,10 @@ module.exports = {
     */
 
     margin: (theme, { negative }) => ({
-      'auto': 'auto',
+      auto: 'auto',
       ...theme('spacing'),
       ...negative(theme('spacing')),
     }),
-
 
     /*
     |-----------------------------------------------------------------------------
@@ -493,7 +482,6 @@ module.exports = {
     inset: theme => ({
       ...theme('sizes'),
     }),
-
 
     /*
     |-----------------------------------------------------------------------------
@@ -514,7 +502,6 @@ module.exports = {
       '8': '8px',
     },
 
-
     /*
     |-----------------------------------------------------------------------------
     | Border Radius                    https://tailwindcss.com/docs/border-radius/
@@ -525,10 +512,9 @@ module.exports = {
     */
 
     borderRadius: {
-      'inherit': 'inherit',
+      inherit: 'inherit',
       ...defaultTheme.borderRadius,
     },
-
 
     /*
     |-----------------------------------------------------------------------------
@@ -540,15 +526,14 @@ module.exports = {
     */
 
     boxShadow: {
-      'sm': '0 1px 2px 0 rgba(0, 0, 0, 0.04)',
-      'default': '0 2px 4px 0 rgba(0,0,0,0.10)',
-      'md': '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
-      'lg': '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
-      'inner': 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
-      'outline': '0 0 0 3px rgba(52,144,220,0.5)',
-      'none': 'none',
+      sm: '0 1px 2px 0 rgba(0, 0, 0, 0.04)',
+      default: '0 2px 4px 0 rgba(0,0,0,0.10)',
+      md: '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
+      lg: '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
+      inner: 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
+      outline: '0 0 0 3px rgba(52,144,220,0.5)',
+      none: 'none',
     },
-
 
     /*
     |-----------------------------------------------------------------------------
@@ -560,7 +545,7 @@ module.exports = {
     */
 
     zIndex: {
-      'auto': 'auto',
+      auto: 'auto',
       '-1': -1,
       '0': 0,
       '1': 1,
@@ -574,7 +559,6 @@ module.exports = {
       '40': 40,
       '50': 50,
     },
-
 
     /*
     |-----------------------------------------------------------------------------
@@ -595,7 +579,6 @@ module.exports = {
       '100': '1',
     },
 
-
     /*
     |-----------------------------------------------------------------------------
     | CSS Grid Row            https://github.com/tailwindcss/tailwindcss/pull/1274
@@ -609,7 +592,6 @@ module.exports = {
       'min-content': 'min-content',
     },
 
-
     /*
     |-----------------------------------------------------------------------------
     | SVG fill                                   https://tailwindcss.com/docs/svg
@@ -620,10 +602,9 @@ module.exports = {
     */
 
     fill: {
-      'current': 'currentColor',
-      'none': 'none',
+      current: 'currentColor',
+      none: 'none',
     },
-
 
     /*
     |-----------------------------------------------------------------------------
@@ -635,9 +616,8 @@ module.exports = {
     */
 
     stroke: {
-      'current': 'currentColor',
+      current: 'currentColor',
     },
-
 
     /*
     |-----------------------------------------------------------------------------
@@ -649,7 +629,7 @@ module.exports = {
     */
 
     aspectRatio: {
-      'square': [1, 1],
+      square: [1, 1],
       '16/9': [16, 9],
       '2/3': [2, 3],
       '3/2': [3, 2],
@@ -657,7 +637,6 @@ module.exports = {
       '4/3': [4, 3],
       '21/9': [21, 9],
     },
-
 
     /*
     |-----------------------------------------------------------------------------
@@ -667,7 +646,6 @@ module.exports = {
     | Class name: .flex-grow-{size}
     |
     */
-
 
     flexGrow: {
       '0': 0,
@@ -679,7 +657,6 @@ module.exports = {
       default: 1,
     },
   },
-
 
   /*
   |-----------------------------------------------------------------------------
@@ -772,7 +749,6 @@ module.exports = {
     container: false,
   },
 
-
   /*
   |-----------------------------------------------------------------------------
   | Plugins                                https://tailwindcss.com/docs/plugins
@@ -787,8 +763,5 @@ module.exports = {
   |
   */
 
-  plugins: [
-    wordpress,
-    aspectRatio,
-  ],
+  plugins: [wordpress, aspectRatio],
 };
