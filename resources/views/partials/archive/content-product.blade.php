@@ -1,1 +1,1 @@
-@include( 'partials.archive.grids.' . $layout )
+@include('partials.archive.grids.' . $layout)

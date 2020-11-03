@@ -23,7 +23,7 @@
         </a>
 
         {{-- Self referencing for looping through the menu --}}
-        @include( 'layouts.header.navigation.menu-item', [ 'in_loop' => true ]  )
+        @include('layouts.header.navigation.menu-item', [ 'in_loop' => true ] )
 
       </li>
     @endforeach

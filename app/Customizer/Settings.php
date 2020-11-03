@@ -63,7 +63,7 @@ class Settings
     /**
      * Get setting from the customizer via theme_mod
      * Supports nested array
-     * todo: Simplify this via common naming convention (this.is.the.convention)
+     * TODO: Simplify this via common naming convention (this.is.the.convention)
      *
      * @param $request 'header.desktop.layout'
      * @param $default

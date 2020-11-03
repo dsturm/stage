@@ -12,7 +12,7 @@
   @if (! have_posts())
     @include('partials.archive.no-posts')
   @else
-    @include( 'partials.archive.content' )
+    @include('partials.archive.content')
   @endif
 
 @endsection

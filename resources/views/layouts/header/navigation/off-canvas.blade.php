@@ -9,7 +9,7 @@
             @svg('chevron-right', 'float-right w-5 h-auto inline-block align-middle')
           @endif
         </a>
-        @include( 'layouts.header.navigation.menu-item' )
+        @include('layouts.header.navigation.menu-item')
       </li>
     @endforeach
   </ul>

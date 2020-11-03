@@ -62,7 +62,7 @@ export const loader = {
     // After enter hook
     barba.hooks.beforeEnter(data => {
 
-      // todo: Remove this temp fix for <footer> jumping above <main>: https://github.com/barbajs/barba/issues/479
+      // TODO: Remove this temp fix for <footer> jumping above <main>: https://github.com/barbajs/barba/issues/479
       $( 'body' ).append($( 'body > footer' ));
 
       // Trigger for resetting features states
@@ -182,7 +182,7 @@ export const loader = {
         namespace: 'shop',
         beforeLeave({ next }) {
           // Force regular load of products
-          // todo: Await @barba/head to load <head> at https://barba.js.org/docs/plugins/head/
+          // TODO: Await @barba/head to load <head> at https://barba.js.org/docs/plugins/head/
           barba.force(next.url.path);
         },
       }],

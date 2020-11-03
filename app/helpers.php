@@ -33,7 +33,7 @@ function stage_dump($dump)
 /**
  * Helper function to access Stage config variables via
  * workaround until Laravel allows config access between apps
- * todo: Move & separate this to child theme: 1. Set config on load, add helper to get parent config
+ * TODO: Move & separate this to child theme: 1. Set config on load, add helper to get parent config
  *
  * @param null $key
  * @param null $default

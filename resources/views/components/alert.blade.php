@@ -1,3 +1,3 @@
 <div class="alert alert-{{ $type }}">
-  {!!  $message ?? $slot  !!}
+  {!! $message ?? $slot !!}
 </div>

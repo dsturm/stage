@@ -71,7 +71,7 @@ export const overlay = {
 
   /**
    * Swipe to close nav
-   * todo: Currently not used and tested
+   * TODO: Currently not used and tested
    */
   swipe: function () {
     objects.overlay.on('swiperight', function(){

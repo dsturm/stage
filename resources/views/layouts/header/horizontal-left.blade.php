@@ -6,7 +6,7 @@
 
     <!-- Primary Navigation -->
     <nav class="justify-end flex-grow hidden w-full pt-0 nav-wrap nav-primary text-inherit border-inherit click-open-menu lg:flex lg:items-center lg:w-auto">
-      @include( 'layouts.header.navigation.horizontal' )
+      @include('layouts.header.navigation.horizontal')
     </nav>
 
     <div class="icons-wrap text-inherit border-inherit lg:flex hover-open-menu">
