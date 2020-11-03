@@ -2,13 +2,13 @@
 
 /**
  * This file contains the defaults used by Stage
- * Overwrite them here or via the Customizer settings
+ * Overwrite them here or via the Customizer settings.
  */
 
 use function Stage\stage_get_default;
 use function Stage\stage_get_fallback;
 
-return array(
+return [
 
     /*
     |--------------------------------------------------------------------------
@@ -20,39 +20,39 @@ return array(
     |
     */
 
-    /**
+    /*
      * Stage Features
      */
-    'features' => array(
-        'lazy'     => array(
+    'features' => [
+        'lazy'     => [
             'activate' => true,
-        ),
-        'loader'   => array(
+        ],
+        'loader'   => [
             'activate' => true,
-        ),
-        'infinity' => array(
+        ],
+        'infinity' => [
             'activate' => true,
-        ),
-        'gallery'  => array(
+        ],
+        'gallery'  => [
             'activate' => true,
-        ),
-    ),
+        ],
+    ],
 
-    /**
+    /*
      * Global style defaults
      */
-    'global'   => array(
+    'global'   => [
         // Adjust also in tailwind config
-        'screens' => array(
+        'screens' => [
             'sm'  => '576px',
             'md'  => '768px',
             'lg'  => '992px',
             'xl'  => '1200px',
             'xxl' => '1600px',
-        ),
+        ],
 
         // All colors are registered as wp-blocks colors.
-        'colors'  => array(
+        'colors'  => [
             'copy'      => '#333333',
             'heading'   => '#333333',
             'primary'   => '#2b6cb0',
@@ -89,14 +89,13 @@ return array(
                     'dark'    => '#2b6cb0',
                 ],
             ],
-        ),
+        ],
 
         // All font sizes are registered as wp-blocks font-sizes.
-        'typo'    => array(
-            'heading' => array(
-                'fonts' => array(
-                    'font-family' =>
-                        'Constantia,
+        'typo'    => [
+            'heading' => [
+                'fonts' => [
+                    'font-family' => 'Constantia,
 						Lucida Bright,
 						Lucidabright,
 						Lucida Serif,
@@ -107,12 +106,11 @@ return array(
 						Georgia,
 						serif',
                     'font-weight' => 'regular',
-                ),
-            ),
-            'copy'    => array(
-                'fonts' => array(
-                    'font-family' =>
-                        'system-ui,
+                ],
+            ],
+            'copy'    => [
+                'fonts' => [
+                    'font-family' => 'system-ui,
 	                    BlinkMacSystemFont,
 	                    -apple-system,
 	                    Segoe UI, Roboto,
@@ -123,68 +121,68 @@ return array(
 	                    Helvetica Neue,
 	                    sans-serif',
                     'font-weight' => 'regular',
-                ),
-            ),
-            'choices' => array(
-                'fonts' => array(
-                    'google' => array( 'popularity', 100 ),
-                ),
-            ),
-            'sizes'   => array(
-                'xs'   => array(
+                ],
+            ],
+            'choices' => [
+                'fonts' => [
+                    'google' => ['popularity', 100],
+                ],
+            ],
+            'sizes'   => [
+                'xs'   => [
                     'value' => 'var(--font-size-xs)',
                     'name'  => __('Extra Small', 'stage'),
                     'px'    => '12',
-                ),
-                'sm'   => array(
+                ],
+                'sm'   => [
                     'value' => 'var(--font-size-sm)',
                     'name'  => __('Small', 'stage'),
                     'px'    => '14',
-                ),
-                'base' => array(
+                ],
+                'base' => [
                     'value' => 'var(--font-size-base)',
                     'name'  => __('Normal', 'stage'),
                     'px'    => '16',
-                ),
-                'lg'   => array(
+                ],
+                'lg'   => [
                     'value' => 'var(--font-size-lg)',
                     'name'  => __('Large', 'stage'),
                     'px'    => '18',
-                ),
-                'xl'   => array(
+                ],
+                'xl'   => [
                     'value' => 'var(--font-size-xl)',
                     'name'  => __('Extra Large', 'stage'),
                     'px'    => '20',
-                ),
-                '2-xl'  => array(
+                ],
+                '2-xl'  => [
                     'value' => 'var(--font-size-2xl)',
                     'name'  => __('XX Large', 'stage'),
                     'px'    => '24',
-                ),
-                '3-xl'  => array(
+                ],
+                '3-xl'  => [
                     'value' => 'var(--font-size-3xl)',
                     'name'  => __('3X Large', 'stage'),
                     'px'    => '30',
-                ),
-                '4-xl'  => array(
+                ],
+                '4-xl'  => [
                     'value' => 'var(--font-size-4xl)',
                     'name'  => __('4X Large', 'stage'),
                     'px'    => '36',
-                ),
-                '5-xl'  => array(
+                ],
+                '5-xl'  => [
                     'value' => 'var(--font-size-5xl)',
                     'name'  => __('5X Large', 'stage'),
                     'px'    => '48',
-                ),
-            ),
-        ),
-    ),
+                ],
+            ],
+        ],
+    ],
 
-    /**
+    /*
      * Body Settings
      */
-    'body'     => array(
-        'classes' => array(
+    'body'     => [
+        'classes' => [
             'app',
             'stage',
             'flex',
@@ -194,47 +192,47 @@ return array(
             'bg-body',
             'font-copy',
             'text-copy',
-        ),
-    ),
+        ],
+    ],
 
-    /**
+    /*
      * Header Settings
      */
-    'header'   => array(
-        'branding' => array(
+    'header'   => [
+        'branding' => [
             'show_tagline' => false,
-        ),
-        'colors'   => array(
+        ],
+        'colors'   => [
             'overwrite' => false,
-        ),
-        'typo'     => array(
+        ],
+        'typo'     => [
             'overwrite' => false,
-        ),
-        'mobile'   => array(
+        ],
+        'mobile'   => [
             'position' => 'sticky',
             'layout'   => 'partials.header.off-canvas', // Template path.
-        ),
-        'desktop'  => array(
+        ],
+        'desktop'  => [
             'position'  => 'sticky',
             'align'     => 'alignscreen', // align, alignwide, alignscreen, alignfull
             'layout'    => 'partials.header.horizontal-left', // Template path.
             'open'      => 'click-open', // click-open or hover-open sub-menu.
             'padding-x' => '0',
             'padding-y' => '2',
-        ),
-        'search'   => array(
+        ],
+        'search'   => [
             'layout' => 'partials.header.search.fullscreen',
-        ),
-    ),
+        ],
+    ],
 
-    /**
+    /*
      * Archives Settings
      * Allows overwriting CPTs
      */
-    'archive'  => array(
-        'post'     => array(
+    'archive'  => [
+        'post'     => [
             'layout'  => 'partials.archive.grids.modern',
-            'display' => array(
+            'display' => [
                 'sidebar'     => false,
                 'thumbnail'   => true,
                 'placeholder' => true,
@@ -242,11 +240,11 @@ return array(
                 'meta'        => false,
                 'excerpt'     => true,
                 'tags'        => false,
-            ),
-        ),
-        'product'  => array(
+            ],
+        ],
+        'product'  => [
             'layout'  => 'partials.archive.grids.masonry',
-            'display' => array(
+            'display' => [
                 'sidebar'     => false,
                 'thumbnail'   => true,
                 'placeholder' => true,
@@ -254,12 +252,12 @@ return array(
                 'meta'        => false,
                 'excerpt'     => true,
                 'tags'        => false,
-            ),
-        ),
+            ],
+        ],
         // Fallback defaults if non set for CPT
-        'fallback' => array(
+        'fallback' => [
             'layout'  => 'partials.archive.grids.masonry',
-            'display' => array(
+            'display' => [
                 'sidebar'     => true,
                 'thumbnail'   => true,
                 'placeholder' => false,
@@ -267,24 +265,24 @@ return array(
                 'meta'        => false,
                 'excerpt'     => true,
                 'tags'        => false,
-            ),
-        ),
-    ),
+            ],
+        ],
+    ],
 
-    /**
+    /*
      * Footer Settings
      */
-    'footer'   => array(
-        'settings' => array(
+    'footer'   => [
+        'settings' => [
             'copyright' => sprintf(
             /* translators: %1$s is replaced with the current year, %2$s with the site name */
                 esc_html__('&#169; Copyright %1$s, all rights reserved by %2$s.', 'stage'),
                 date('Y'),
                 get_bloginfo('name', 'display')
             ),
-        ),
-        'desktop'  => array(
+        ],
+        'desktop'  => [
             'align' => stage_get_fallback('header.desktop.align', 'alignwide'),
-        ),
-    ),
-);
+        ],
+    ],
+];

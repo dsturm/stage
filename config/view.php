@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
 
     /*
     |--------------------------------------------------------------------------
@@ -12,9 +12,9 @@ return array(
     |
     */
 
-    'paths'      => array(
+    'paths'      => [
         get_theme_file_path('/resources/views'),
-    ),
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -55,13 +55,13 @@ return array(
     |
     */
 
-    'namespaces' => array(
+    'namespaces' => [
         /*
          | Given the below example, in your views use something like:
          |     @include('MyPlugin::some.view.or.partial.here')
          */
         // 'MyPlugin' => WP_PLUGIN_DIR . '/my-plugin/resources/views',
-    ),
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -73,8 +73,8 @@ return array(
     |
     */
 
-    'directives' => array(
+    'directives' => [
         'asset'  => Roots\Acorn\Assets\AssetDirective::class,
         'action' => Stage\Directives\ActionDirective::class,
-    ),
-);
+    ],
+];

@@ -2,7 +2,7 @@
 
 use function Roots\base_path;
 
-return array(
+return [
 
     /*
     |--------------------------------------------------------------------------
@@ -64,9 +64,9 @@ return array(
     |
     */
 
-    'directives' => array(
+    'directives' => [
         // 'fa'     => 'fa.solid',
         // 'brands' => 'fa.brands',
-    ),
+    ],
 
-);
+];
