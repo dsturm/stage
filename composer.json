@@ -29,7 +29,7 @@
     },
     "zirkeldesign/circle": {
       "type": "git",
-      "url": "https://github.com/zirkeldesign/circle.git"
+      "url": "git@github.com:zirkeldesign/circle.git"
     }
   },
   "require": {

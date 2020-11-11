@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a2cb0640657625d18b6f3af036266a42",
+    "content-hash": "d38e1598656b6a3389983be784f9fc9e",
     "packages": [
         {
             "name": "brick/math",
@@ -6161,7 +6161,7 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/zirkeldesign/circle.git",
+                "url": "git@github.com:zirkeldesign/circle.git",
                 "reference": "178e367dab66c6a3bf73aa315121b40401dbffee"
             },
             "require": {
