@@ -29,14 +29,7 @@
     },
     "zirkeldesign/circle": {
       "type": "git",
-      "url": "https://github.com/zirkeldesign/acorn-db.git"
-    },
-    "zirkeldesign/circle-locale": {
-      "type": "path",
-      "url": "/Users/dcsturm/wrk/packages/composer/circle",
-      "options": {
-        "symlink": true
-      }
+      "url": "https://github.com/zirkeldesign/circle.git"
     }
   },
   "require": {
@@ -66,7 +59,7 @@
     "ouun/stage-woocommerce": "^1.0",
     "roots/acorn": "^1.1",
     "tiny-pixel/acorn-db": "dev-master",
-    "zirkeldesign/circle": "^0.0.1"
+    "zirkeldesign/circle": "dev-master"
   },
   "require-dev": {
     "filp/whoops": "^2.5",
