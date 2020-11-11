@@ -1,0 +1,37 @@
+@import '../../components/columns';
+
+.wp-block-columns {
+  @screen sm {
+    @apply flex flex-row -mx-6;
+
+    &.are-vertically-aligned-top {
+      @apply items-start;
+    }
+
+    &.are-vertically-aligned-bottom {
+      @apply items-end;
+    }
+
+    &.are-vertically-aligned-center {
+      @apply items-center;
+    }
+  }
+}
+
+.wp-block-column {
+  @screen sm {
+    @apply mx-6;
+
+    flex: 1;
+  }
+
+  &:not(:first-child) {
+    @apply mt-6;
+
+    @screen sm {
+      .wp-block-columns > & {
+        @apply mt-0;
+      }
+    }
+  }
+}

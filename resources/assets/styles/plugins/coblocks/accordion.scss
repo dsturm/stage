@@ -1,0 +1,23 @@
+.wp-block-coblocks-accordion {
+  @apply border-t border-ibb-blue-500;
+}
+
+.wp-block-coblocks-accordion-item {
+  @apply mb-0;
+}
+
+.wp-block-coblocks-accordion-item__title {
+  @apply border-b border-ibb-blue-500 bg-transparent transition-colors ease-in-out duration-300;
+
+  &:hover {
+    @apply bg-ibb-blue-50;
+  }
+
+  &:focus {
+    @apply bg-ibb-blue-50 outline-none shadow-outline;
+  }
+}
+
+.wp-block-coblocks-accordion-item__content {
+  @apply border-0;
+}

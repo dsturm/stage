@@ -1,0 +1,862 @@
+# Copyright (C) 2019 Philipp Wellmer
+# This file is distributed under the MIT License.
+msgid ""
+msgstr ""
+"Project-Id-Version: Stage 1.0.0-alpha\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/wp-theme-ibb-"
+"karriere\n"
+"POT-Creation-Date: 2020-11-11T13:32:24+00:00\n"
+"PO-Revision-Date: 2020-11-11 14:34+0100\n"
+"Last-Translator: \n"
+"Language-Team: ouun.io, hello@ouun.io\n"
+"Language: de_DE@formal\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Theme Name of the theme
+msgid "IBB Karriere"
+msgstr "IBB Karriere"
+
+#. Theme URI of the theme
+msgid "https://karriere.ibb.com/"
+msgstr "https://karriere.ibb.com/"
+
+#. Description of the theme
+msgid ""
+"A feature rich & best practise Theme Framework by ouun.io, based on roots.io "
+"Sage"
+msgstr ""
+"Ein Feature- und Best-Practice-Theme von ouun.io, basierend auf roots.io Sage"
+
+#. Author of the theme
+msgid "Daniel Sturm"
+msgstr "Daniel Sturm"
+
+#. Author URI of the theme
+msgid "https://zirkel.design/"
+msgstr "https://zirkel.design/"
+
+#: app/Customizer/Controls/LayoutControl.php:55
+#: app/Customizer/Controls/LayoutControl.php:106
+msgid "Change"
+msgstr "Ändern"
+
+#: app/Customizer/Controls/LayoutControl.php:56
+msgid "Close"
+msgstr "Schliessen"
+
+#: app/Customizer/Customizer.php:71
+msgid "System Serif"
+msgstr "System-Serife"
+
+#: app/Customizer/Customizer.php:75
+msgid "System Sans-Serif"
+msgstr "System-Serifenlose"
+
+#: app/Customizer/Panels/ArchivesPanel.php:29
+msgid "Archives"
+msgstr "Archive"
+
+#: app/Customizer/Panels/ArchivesPanel.php:81
+msgid "Grid Layout"
+msgstr "Gekachelt"
+
+#: app/Customizer/Panels/ColorsPanel.php:37
+#: app/Customizer/Panels/FooterPanel.php:63
+#: app/Customizer/Panels/GlobalPanel.php:255
+#: app/Customizer/Panels/HeaderPanel.php:421
+msgid "Colors"
+msgstr "Farben"
+
+#: app/Customizer/Panels/ColorsPanel.php:38
+msgid "Customize your colors."
+msgstr "Passen Sie Ihre Farben an."
+
+#. translators: %s: Header
+#: app/Customizer/Panels/ColorsPanel.php:84
+msgid "%s Colors"
+msgstr "%s Farben"
+
+#: app/Customizer/Panels/ColorsPanel.php:87
+#: app/Customizer/Panels/FooterPanel.php:64
+#: app/Customizer/Panels/GlobalPanel.php:256
+msgid "Set color settings for your website"
+msgstr "Lege die Farbeinstellungen für Ihre Webseite fest"
+
+#: app/Customizer/Panels/ColorsPanel.php:101
+msgid "Primary Color"
+msgstr "Primäre Farbe"
+
+#: app/Customizer/Panels/ColorsPanel.php:102
+msgid "Secondary Color"
+msgstr "Sekundäre Farbe"
+
+#: app/Customizer/Panels/ColorsPanel.php:103
+msgid "Default Background Color"
+msgstr "Standard-Hintergrund-Farbe"
+
+#: app/Customizer/Panels/ColorsPanel.php:104
+msgid "Default Text Color"
+msgstr "Farbe Standardtext"
+
+#: app/Customizer/Panels/ColorsPanel.php:105
+msgid "Default Heading Color"
+msgstr "Standardfarbe der Überschrift"
+
+#: app/Customizer/Panels/ColorsPanel.php:192
+msgid "Link Color"
+msgstr "Linkfarbe"
+
+#: app/Customizer/Panels/ColorsPanel.php:193
+msgid "Hover & Focus Color"
+msgstr "Hover & Fokus Farbe"
+
+#: app/Customizer/Panels/FooterPanel.php:42 app/setup.php:164
+msgid "Footer"
+msgstr "Fußzeile"
+
+#: app/Customizer/Panels/FooterPanel.php:43
+msgid "Customize the footer."
+msgstr "Den Foster anpassen."
+
+#: app/Customizer/Panels/FooterPanel.php:83
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: app/Customizer/Panels/FooterPanel.php:84
+msgid "Footer settings."
+msgstr "Fußzeilen-Einstellungen."
+
+#: app/Customizer/Panels/FooterPanel.php:96
+msgid "Copyright Text"
+msgstr "Copyright Text"
+
+#: app/Customizer/Panels/GlobalPanel.php:30
+msgid "Global Settings"
+msgstr "Globale Einstellungen"
+
+#: app/Customizer/Panels/GlobalPanel.php:31
+msgid "Various settings for your website."
+msgstr "Verschiedene Einstellungen für Ihre Website."
+
+#: app/Customizer/Panels/GlobalPanel.php:51
+msgid "Website Information"
+msgstr "Webseiten-Informationen"
+
+#: app/Customizer/Panels/GlobalPanel.php:66
+msgid "Titel of the Website"
+msgstr "Titel der Website"
+
+#: app/Customizer/Panels/GlobalPanel.php:67
+msgid "This is so important!"
+msgstr "Das ist so wichtig!"
+
+#: app/Customizer/Panels/GlobalPanel.php:92
+msgid "Subtitle of the Website"
+msgstr "Untertitel der Website"
+
+#: app/Customizer/Panels/GlobalPanel.php:93
+msgid "This is so important, too!"
+msgstr "Auch das ist so wichtig!"
+
+#: app/Customizer/Panels/GlobalPanel.php:121
+msgid "Logos & Branding"
+msgstr "Logos und Branding"
+
+#: app/Customizer/Panels/GlobalPanel.php:161
+#: app/Customizer/Panels/HeaderPanel.php:364
+msgid "Typography"
+msgstr "Typografie"
+
+#: app/Customizer/Panels/GlobalPanel.php:162
+msgid "Set typo settings for your website"
+msgstr "Typographische Einstellungen für Deine Website"
+
+#: app/Customizer/Panels/GlobalPanel.php:174
+msgid "Copy Font"
+msgstr "Fließtext Schriftart"
+
+#: app/Customizer/Panels/GlobalPanel.php:212
+msgid "Headlines Font"
+msgstr "Überschriften Schriftart"
+
+#: app/Customizer/Panels/HeaderPanel.php:48
+msgid "Site Header & Menus"
+msgstr "Seiten-Header & Menüs"
+
+#: app/Customizer/Panels/HeaderPanel.php:49
+msgid "Customize the main header and menus."
+msgstr "Passe den Header und die Menüs an."
+
+#: app/Customizer/Panels/HeaderPanel.php:72
+msgid "Layout"
+msgstr "Layout"
+
+#: app/Customizer/Panels/HeaderPanel.php:73
+msgid "Adjust theme colors."
+msgstr "Passe die Designfarben an."
+
+#: app/Customizer/Panels/HeaderPanel.php:113
+msgid "Header Layout"
+msgstr "Header Layout"
+
+#: app/Customizer/Panels/HeaderPanel.php:155
+msgid "Search Layout"
+msgstr "Layout suchen"
+
+#: app/Customizer/Panels/HeaderPanel.php:192
+msgid "Header Position"
+msgstr "Header Position"
+
+#: app/Customizer/Panels/HeaderPanel.php:195
+msgid "Default"
+msgstr "Standard"
+
+#: app/Customizer/Panels/HeaderPanel.php:196
+msgid "Fixed on top"
+msgstr "Oben befestigt"
+
+#: app/Customizer/Panels/HeaderPanel.php:197
+msgid "Auto hide while scrolling"
+msgstr "Automatisches Ausblenden während des Scrollens"
+
+#: app/Customizer/Panels/HeaderPanel.php:222
+msgid "Fullwidth header"
+msgstr "Header mit voller Breite"
+
+#: app/Customizer/Panels/HeaderPanel.php:249
+msgid "Show Tagline"
+msgstr "Tagzeile anzeigen"
+
+#: app/Customizer/Panels/HeaderPanel.php:278
+msgid "Horizontal Padding"
+msgstr "Horizontaler Innenabstand"
+
+#: app/Customizer/Panels/HeaderPanel.php:311
+msgid "Vertical Padding"
+msgstr "Vertikaler Innenabstand"
+
+#: app/Customizer/Panels/HeaderPanel.php:375
+msgid "Header Typo"
+msgstr "Kopfzeile Typo"
+
+#: app/Customizer/Panels/SettingsPanel.php:21
+msgid "Website Settings"
+msgstr "Website-Einstellungen"
+
+#: app/Customizer/Panels/WebsiteFeatures.php:27
+msgid "Website Features"
+msgstr "Features der Website"
+
+#: app/Customizer/Panels/WebsiteFeatures.php:28
+msgid "Activate & customize website features."
+msgstr "Aktivieren und anpassen der Website-Funktionen."
+
+#: app/Customizer/Panels/WebsiteFeatures.php:48
+msgid "Dynamic Page Loading & Transitions"
+msgstr "Dynamisches Laden von Seiten und Übergänge"
+
+#: app/Customizer/Panels/WebsiteFeatures.php:67
+msgid "Lazy Load Media"
+msgstr "„Lazy Load“ von Medieninhalten"
+
+#: app/Customizer/Panels/WebsiteFeatures.php:86
+msgid "Infinite scrolling for Archives"
+msgstr "Endloses Scrollen für Archive"
+
+#: app/Customizer/Panels/WebsiteFeatures.php:105
+msgid "Galleries"
+msgstr "Galerien"
+
+#: app/Customizer/Panels/WebsiteFeatures.php:147
+msgid "Deactivate Feature"
+msgstr "Feature deaktivieren"
+
+#: app/Customizer/Panels/WebsiteFeatures.php:148
+msgid "Activate Feature"
+msgstr "Feature aktivieren"
+
+#: app/Customizer/Panels/WebsitePanel.php:66
+msgid "Shop Settings"
+msgstr "Shop-Einstellungen"
+
+#: app/filters.php:82
+msgid "Continued"
+msgstr "Weiterlesen"
+
+#: app/Providers/MegaMenu.php:58
+msgid "Activate Mega Menu"
+msgstr "Mega-Menü aktivieren"
+
+#: app/Providers/ShopCheckout.php:34 app/Providers/ShopCheckout.php:41
+msgid "<span id=\"digthis-prevent-error\">Successfully validated "
+msgstr "<span id=\"digthis-prevent-error\">Erfolgreich validiert "
+
+#: app/Providers/ShopCheckout.php:72
+#: resources/views/shop/cart/cart.blade.php:18
+msgid "Cart"
+msgstr "Warenkorb"
+
+#: app/Providers/ShopCheckout.php:73
+msgid "Invoice & Shipping"
+msgstr "Rechnung & Versand"
+
+#: app/Providers/ShopCheckout.php:74
+msgid "Review & Payment"
+msgstr "Zahlung überprüfen"
+
+#: app/Providers/ShopCheckout.php:75
+msgid "Order Confirmation"
+msgstr "Eingangsbestätigung"
+
+#: app/Providers/ShopCheckout.php:123
+msgid "Proceed to payment"
+msgstr "Weiter zur Zahlung"
+
+#: app/Providers/ShopExtras.php:146
+msgid " Save "
+msgstr " Speichern "
+
+#: app/Providers/ShopFilters.php:45
+msgid "Shop"
+msgstr "Shop"
+
+#: app/Providers/ShopFilters.php:190
+msgid "From"
+msgstr "Von"
+
+#: app/setup.php:75
+msgid "Primary Navigation"
+msgstr "Hauptnavigation"
+
+#: app/setup.php:76
+msgid "Footer Navigation"
+msgstr "Fußzeilen Navigation"
+
+#: app/setup.php:157
+msgid "Primary"
+msgstr "Primär"
+
+#: app/View/Components/Job/Finder.php:24
+msgid "Find your new job"
+msgstr "Finden Sie Ihren neuen Job"
+
+#: app/View/Composers/Post.php:48
+msgid "Latest Posts"
+msgstr "Aktuelle Beiträge"
+
+#. translators: %s is replaced with the search query
+#: app/View/Composers/Post.php:62
+msgid "Search Results for %s"
+msgstr "Suchergebnisse für %s"
+
+#: app/View/Composers/Post.php:68
+msgid "Not Found"
+msgstr "Nicht gefunden"
+
+#: app/View/Composers/Shop/MiniCart.php:56
+msgid "Cart <sup class='cart-count count'>%d</sup>"
+msgstr "Warenkorb <sup class='cart-count count'>%d</sup>"
+
+#: config/defaults.php:119
+msgid "Extra Small"
+msgstr "Extra klein"
+
+#: config/defaults.php:124
+msgid "Small"
+msgstr "Klein"
+
+#: config/defaults.php:129
+msgid "Normal"
+msgstr "Normal"
+
+#: config/defaults.php:134
+msgid "Large"
+msgstr "Groß"
+
+#: config/defaults.php:139
+msgid "Extra Large"
+msgstr "Extra Groß"
+
+#: config/defaults.php:144
+msgid "XX Large"
+msgstr "XX Large"
+
+#: config/defaults.php:149
+msgid "3X Large"
+msgstr "3XL Groß"
+
+#: config/defaults.php:154
+msgid "4X Large"
+msgstr "4XL Groß"
+
+#: config/defaults.php:159
+msgid "5X Large"
+msgstr "5XL Groß"
+
+#. translators: %1$s is replaced with the current year, %2$s with the site name
+#: config/defaults.php:289
+msgid "&#169; Copyright %1$s, all rights reserved by %2$s."
+msgstr "&#169; Copyright %1$s, alle Rechte vorbehalten %2$s."
+
+#: config/poet.php:27
+msgid "Enter job position"
+msgstr "Stellenposition eingeben"
+
+#: config/poet.php:38 config/poet.php:39
+#: storage/framework/views/3b1d1c2e988c02592541dbbd298394888b8caeee.php:31
+msgctxt "CPT label"
+msgid "Job"
+msgid_plural "Jobs"
+msgstr[0] "Stellenangebot"
+msgstr[1] "Stellenangebote"
+
+#: config/poet.php:40 config/poet.php:68
+msgid "Add New"
+msgstr "Neu hinzufügen"
+
+#: config/poet.php:66 config/poet.php:67
+#: storage/framework/views/a46f0fe3580f125c027af79122d1f62bdfbbb413.php:43
+msgctxt "CPT label"
+msgid "Event"
+msgid_plural "Events"
+msgstr[0] "Veranstaltung"
+msgstr[1] "Veranstaltungen"
+
+#: config/poet.php:92 config/poet.php:93
+msgctxt "CPT label"
+msgid "Job Category"
+msgid_plural "Job Categories"
+msgstr[0] "Job-Kategorie"
+msgstr[1] "Job-Kategorien"
+
+#: config/poet.php:100 config/poet.php:101
+msgctxt "CPT label"
+msgid "Job Type"
+msgid_plural "Job Types"
+msgstr[0] ""
+msgstr[1] ""
+
+#: config/poet.php:108 config/poet.php:109
+msgctxt "CPT label"
+msgid "Company"
+msgid_plural "Companies"
+msgstr[0] ""
+msgstr[1] ""
+
+#: config/poet.php:116 config/poet.php:117
+msgctxt "CPT label"
+msgid "Event Category"
+msgid_plural "Event Categories"
+msgstr[0] "Veranstaltungskategorie"
+msgstr[1] "Job-Kategorien"
+
+#: functions.php:15
+msgid "Error locating autoloader. Please run <code>composer install</code>."
+msgstr ""
+"Fehler beim Auffinden des Autoloaders. Bitte <code>composer install</code> "
+"ausführen."
+
+#: functions.php:38
+msgid "Error locating <code>%s</code> for inclusion."
+msgstr ""
+"Es trat ein Fehler beim Auffinden von <code>%s</code> für die Einbindung auf."
+
+#: resources/views/layouts/footer/gallery.blade.php:14
+#: storage/framework/views/89cd8e02b2f4d7a60f2eda1e41105c257149749b.php:14
+msgid "Close (Esc)"
+msgstr "Schließen (Esc)"
+
+#: resources/views/layouts/footer/gallery.blade.php:17
+#: storage/framework/views/89cd8e02b2f4d7a60f2eda1e41105c257149749b.php:17
+msgid "Share"
+msgstr "Teilen"
+
+#: resources/views/layouts/footer/gallery.blade.php:20
+#: storage/framework/views/89cd8e02b2f4d7a60f2eda1e41105c257149749b.php:20
+msgid "Toggle fullscreen"
+msgstr "Vollbildmodus ein/aus"
+
+#: resources/views/layouts/footer/gallery.blade.php:24
+#: storage/framework/views/89cd8e02b2f4d7a60f2eda1e41105c257149749b.php:24
+msgid "Zoom in/out"
+msgstr "Zoom rein/raus"
+
+#: resources/views/layouts/footer/gallery.blade.php:35
+#: storage/framework/views/89cd8e02b2f4d7a60f2eda1e41105c257149749b.php:35
+msgid "Previous (arrow left)"
+msgstr "Zurück (Pfeiltaste links)"
+
+#: resources/views/layouts/footer/gallery.blade.php:38
+#: storage/framework/views/89cd8e02b2f4d7a60f2eda1e41105c257149749b.php:38
+msgid "Next (arrow right)"
+msgstr "Vor (Pfeiltaste rechts)"
+
+#. Translators: $s shipping destination.
+#: resources/views/shop/cart/cart-shipping.blade.php:44
+msgid "Shipping to %s."
+msgstr "Versand nach %s."
+
+#. Translators: $s shipping destination.
+#: resources/views/shop/cart/cart-shipping.blade.php:45
+msgid "Change address"
+msgstr "Adresse ändern"
+
+#: resources/views/shop/cart/cart-shipping.blade.php:47
+msgid "Shipping options will be updated during checkout."
+msgstr "Wir sind stets um niedrigste Versandkosten bemüht."
+
+#: resources/views/shop/cart/cart-shipping.blade.php:54
+msgid "Enter your address to view shipping options."
+msgstr "Geben Sie Ihre Adresse ein, um die Versandoptionen anzuzeigen."
+
+#: resources/views/shop/cart/cart-shipping.blade.php:56
+msgid ""
+"There are no shipping options available. Please ensure that your address has "
+"been entered correctly, or contact us if you need any help."
+msgstr ""
+"Es sind keine Versandoptionen verfügbar. Bitte stellen Sie sicher, dass Ihre "
+"Adresse korrekt eingegeben wurde, oder kontaktieren Sie uns, wenn Sie Hilfe "
+"benötigen."
+
+#. Translators: $s shipping destination.
+#: resources/views/shop/cart/cart-shipping.blade.php:59
+msgid "No shipping options were found for %s."
+msgstr "Es wurden keine Versandoptionen für %s gefunden."
+
+#. Translators: $s shipping destination.
+#: resources/views/shop/cart/cart-shipping.blade.php:60
+msgid "Enter a different address"
+msgstr "Geben Sie eine andere Adresse ein"
+
+#: resources/views/shop/cart/cart-totals.blade.php:22
+#: resources/views/shop/cart/cart-totals.blade.php:23
+#: resources/views/shop/cart/cart.blade.php:28
+#: resources/views/shop/cart/cart.blade.php:114
+msgid "Subtotal"
+msgstr "Zwischensumme"
+
+#. translators: %s is replaced with tax.
+#: resources/views/shop/cart/cart-totals.blade.php:63
+msgid "(estimated for %s)"
+msgstr "(voraussichtlich %s)"
+
+#: resources/views/shop/cart/cart-totals.blade.php:84
+#: resources/views/shop/cart/cart-totals.blade.php:85
+msgid "Total"
+msgstr "Gesamt"
+
+#: resources/views/shop/cart/cart.blade.php:24
+#: resources/views/shop/cart/cart.blade.php:70
+msgid "Product"
+msgstr "Produkt"
+
+#: resources/views/shop/cart/cart.blade.php:27
+#: resources/views/shop/cart/cart.blade.php:93
+msgid "Quantity"
+msgstr "Anzahl"
+
+#: resources/views/shop/cart/cart.blade.php:50
+msgid "Remove this item"
+msgstr "Diesen Artikel entfernen"
+
+#: resources/views/shop/cart/cart.blade.php:82
+msgid "Available on backorder"
+msgstr "Verfügbar bei Nachlieferung"
+
+#: resources/views/shop/cart/cart.blade.php:87
+msgid "Price"
+msgstr "Preis"
+
+#: resources/views/shop/cart/cart.blade.php:130
+msgid "Update cart"
+msgstr "Warenkorb aktualisieren"
+
+#: resources/views/shop/cart/cart.blade.php:149
+msgid "Cart totals"
+msgstr "Summe"
+
+#: resources/views/shop/cart/cart.blade.php:155
+#: resources/views/shop/cart/cart.blade.php:160
+msgid "Coupon code"
+msgstr "Gutscheincode"
+
+#: resources/views/shop/cart/cart.blade.php:161
+msgid "Apply coupon"
+msgstr "Gutschein anwenden"
+
+#: resources/views/shop/cart/proceed-to-checkout-button.blade.php:8
+msgid "Proceed to checkout"
+msgstr "Zur Kasse"
+
+#: resources/views/shop/cart/shipping-calculator.blade.php:20
+msgid "Calculate shipping"
+msgstr "Versandkosten berechnen"
+
+#: resources/views/shop/cart/shipping-calculator.blade.php:29
+msgid "Select a country&hellip;"
+msgstr "Land auswählen&hellip;"
+
+#: resources/views/shop/cart/shipping-calculator.blade.php:47
+#: resources/views/shop/cart/shipping-calculator.blade.php:52
+#: resources/views/shop/cart/shipping-calculator.blade.php:64
+msgid "State / County"
+msgstr "Bundesland"
+
+#: resources/views/shop/cart/shipping-calculator.blade.php:53
+msgid "Select an option&hellip;"
+msgstr "Wählen Sie eine Option&hellip;"
+
+#: resources/views/shop/cart/shipping-calculator.blade.php:73
+msgid "City"
+msgstr "Stadt"
+
+#: resources/views/shop/cart/shipping-calculator.blade.php:79
+msgid "Postcode / ZIP"
+msgstr "Postleitzahl"
+
+#: resources/views/shop/cart/shipping-calculator.blade.php:83
+msgid "Update"
+msgstr "Aktualisieren"
+
+#: resources/views/shop/loop/orderby.blade.php:13
+msgid "Shop order"
+msgstr "Bestellung"
+
+#. translators: %d: total results
+#: resources/views/shop/loop/result-count.blade.php:16
+msgid "Showing the single result"
+msgid_plural "Showing all %d results"
+msgstr[0] "Einzelnes Produkt anzeigen"
+msgstr[1] "Es werden alle %d Ergebnisse angezeigt"
+
+#. translators: 1: first result 2: last result 3: total results
+#: resources/views/shop/loop/result-count.blade.php:21
+msgctxt "with first and last result"
+msgid "Showing the single result"
+msgid_plural "Showing %1$d&ndash;%2$d of %3$d results"
+msgstr[0] "Einzelnes Produkt anzeigen"
+msgstr[1] "Zeigt %1$d&ndash;%2$d von %3$d Ergebnisse"
+
+#. Template Name of the theme
+msgid "Headless"
+msgstr "Kopflos"
+
+#: storage/framework/views/3b1d1c2e988c02592541dbbd298394888b8caeee.php:3
+msgid "Current vacancies"
+msgstr "Aktuelle Stellenangebote"
+
+#: storage/framework/views/3b1d1c2e988c02592541dbbd298394888b8caeee.php:31
+#: storage/framework/views/a46f0fe3580f125c027af79122d1f62bdfbbb413.php:43
+msgid "Show more %s"
+msgstr "Mehr %s anzeigen"
+
+#: storage/framework/views/5d9dc1f11e971cd16f3eb56bafb6e7f64b78d3f7.php:13
+msgid "Submit"
+msgstr "Absenden"
+
+#: storage/framework/views/23d5f8bdf6b11fe17097a352ea81c04d811fccb2.php:9
+msgid "Specialization"
+msgstr "Fachrichtung"
+
+#: storage/framework/views/23d5f8bdf6b11fe17097a352ea81c04d811fccb2.php:23
+msgid "Location"
+msgstr "Ort"
+
+#: storage/framework/views/23d5f8bdf6b11fe17097a352ea81c04d811fccb2.php:40
+msgid "Find jobs"
+msgstr "Jobs finden"
+
+#: storage/framework/views/64382baeb33877ee96c4c97c153444bde2a124f9.php:3
+msgid "Avatar by "
+msgstr "Profilbild von "
+
+#: storage/framework/views/64382baeb33877ee96c4c97c153444bde2a124f9.php:7
+msgid "By"
+msgstr "Von"
+
+#. translators: %s: Human-readable time difference.
+#: storage/framework/views/64382baeb33877ee96c4c97c153444bde2a124f9.php:14
+msgid "%s ago"
+msgstr "vor %s"
+
+#: storage/framework/views/a46f0fe3580f125c027af79122d1f62bdfbbb413.php:2
+msgid "Current events"
+msgstr "Aktuelle Veranstaltungen"
+
+#: storage/framework/views/de7a3a84237b6d46f05331b4bc52e72a2951822f.php:10
+msgid "Your tasks"
+msgstr "Ihre Aufgaben"
+
+#: storage/framework/views/de7a3a84237b6d46f05331b4bc52e72a2951822f.php:16
+msgid "Your profile"
+msgstr "Ihr Profil"
+
+#: storage/framework/views/de7a3a84237b6d46f05331b4bc52e72a2951822f.php:22
+msgid "What we offer you"
+msgstr "Das bieten wir Ihnen"
+
+#: storage/framework/views/de7a3a84237b6d46f05331b4bc52e72a2951822f.php:28
+msgid "My employer"
+msgstr "Mein Arbeitgeber"
+
+#: app/Customizer/assets/scripts/customize-controls.js:72
+#: dist/scripts/customizer/customize-controls.js:72
+msgid "Reset to default"
+msgstr "Auf Standardeinstellungen zurücksetzen"
+
+#: composer.json
+msgctxt "block description"
+msgid "WordPress Theme Framework based on Roots Sage"
+msgstr "WordPress Theme Framework basierend auf Sage"
+
+#: composer.json
+msgctxt "block keyword"
+msgid "wordpress"
+msgstr "wordpress"
+
+#~ msgid "Pages:"
+#~ msgstr "Seiten:"
+
+#~ msgctxt "comments title"
+#~ msgid "One response to &ldquo;%2$s&rdquo;"
+#~ msgid_plural "%1$s responses to &ldquo;%2$s&rdquo;"
+#~ msgstr[0] "Ein Kommentar zu &ldquo;%2$s&rdquo;"
+#~ msgstr[1] "%1$s Kommentare zu &ldquo;%2$s&rdquo;"
+
+#~ msgid "&larr; Older comments"
+#~ msgstr "&larr; Ältere Kommentare"
+
+#~ msgid "Newer comments &rarr;"
+#~ msgstr "Neuere Kommentare &rarr;"
+
+#~ msgid "Comments are closed."
+#~ msgstr "Die Kommentarfunktion ist geschlossen."
+
+#~ msgid "Search for:"
+#~ msgstr "Suche nach:"
+
+#~ msgid "Search &hellip;"
+#~ msgstr "Suche &hellip;"
+
+#~ msgid "Search"
+#~ msgstr "Suche nach"
+
+#~ msgid "Stage"
+#~ msgstr "Stage"
+
+#~ msgid "https://ouun.io/"
+#~ msgstr "https://ouun.io/"
+
+#~ msgid "Philipp Wellmer"
+#~ msgstr "Philipp Wellmer"
+
+#~ msgid "My section description."
+#~ msgstr "Beschreibung der Sektion."
+
+#~ msgid "Footer Colors"
+#~ msgstr "Farben im Footer"
+
+#~ msgid "Background Color"
+#~ msgstr "Hintergrundfarbe"
+
+#~ msgid "Text Color"
+#~ msgstr "Textfarbe"
+
+#~ msgid "Item Hover & Active"
+#~ msgstr "Aktive Farbe"
+
+#~ msgid "Main Colors"
+#~ msgstr "Primärfarben"
+
+#~ msgid "Link Colors"
+#~ msgstr "Link-Farben"
+
+#~ msgid "Main Menu"
+#~ msgstr "Hauptmenü"
+
+#~ msgid "Menu Item Color"
+#~ msgstr "Farbe des Menüeintrags"
+
+#~ msgid "Stage &rsaquo; Error"
+#~ msgstr "Stage &rsaquo; Fehler"
+
+#~ msgid "You must be using PHP 7.2 or greater."
+#~ msgstr "Du musst PHP 7.2 oder höher verwenden."
+
+#~ msgid "Invalid PHP version"
+#~ msgstr "Ungültige PHP-Version"
+
+#~ msgid "You must be using WordPress 5.2 or greater."
+#~ msgstr "Du musst WordPress 5.2 oder größer verwenden."
+
+#~ msgid "Invalid WordPress version"
+#~ msgstr "Ungültige WordPress-Version"
+
+#~ msgid "You must run <code>composer install</code> from the Stage directory."
+#~ msgstr ""
+#~ "Du musst <code>composer install</code> im Stage-Verzeichnis ausführen."
+
+#~ msgid "Autoloader not found."
+#~ msgstr "Autoloader nicht gefunden."
+
+#~ msgid "File not found"
+#~ msgstr "Datei nicht gefunden"
+
+#~ msgid "Return to shop"
+#~ msgstr "Zurück zum Shop"
+
+#~ msgid ""
+#~ "Unfortunately your order cannot be processed as the originating bank/"
+#~ "merchant has declined your transaction. Please attempt your purchase "
+#~ "again."
+#~ msgstr ""
+#~ "Leider konnten wir Ihre Bestellung nicht bearbeiten, da die Bank/der "
+#~ "Zahlungsdienstleister Ihre Transaktion abgelehnt hat. Bitte versuchen Sie "
+#~ "es noch einmal."
+
+#~ msgid "Pay"
+#~ msgstr "Bezahlen"
+
+#~ msgid "My account"
+#~ msgstr "Mein Konto"
+
+#~ msgid "Thank you. Your order has been received."
+#~ msgstr "Vielen Dank. Ihre Bestellung ist eingegangen."
+
+#~ msgid "Order number:"
+#~ msgstr "Bestellnummer:"
+
+#~ msgid "Date:"
+#~ msgstr "Datum:"
+
+#~ msgid "Email:"
+#~ msgstr "E-Mail:"
+
+#~ msgid "Total:"
+#~ msgstr "Gesamt:"
+
+#~ msgid "Payment method:"
+#~ msgstr "Zahlungsmethode:"
+
+#~ msgctxt "Product quantity input tooltip"
+#~ msgid "Qty"
+#~ msgstr "Menge"
+
+#~ msgid "Billing address"
+#~ msgstr "Rechnungsadresse"
+
+#~ msgid "Custom Template"
+#~ msgstr "Template"
+
+#~ msgid "View your shopping cart"
+#~ msgstr "Warenkorb ansehen"
+
+#~ msgid "ENTER to search, ESC to exit"
+#~ msgstr "ENTER zum Suchen, ESC zum Beenden"
+
+#~ msgid "Sorry, no results were found."
+#~ msgstr "Entschuldigung, es wurde nichts gefunden."

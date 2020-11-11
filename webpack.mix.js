@@ -19,7 +19,7 @@ require('laravel-mix-export-tailwind-config');
 // Public Path & Development Domain
 mix.setPublicPath('./dist')
   .browserSync({
-    proxy: 'stage.test',
+    proxy: 'https://karriere.ibb.test',
     port: '1984',
   });
 

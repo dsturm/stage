@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "01acea48c795dd2c5f8b9468b529368d",
+    "content-hash": "96c4599286651422e01b1d4708ebfa12",
     "packages": [
         {
             "name": "brick/math",
@@ -61,6 +61,139 @@
                 }
             ],
             "time": "2020-08-18T23:57:15+00:00"
+        },
+        {
+            "name": "caseyamcl/toc",
+            "version": "v2.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/caseyamcl/toc.git",
+                "reference": "68fd06c26086de4732bbe7a26ae1355afa0743c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/caseyamcl/toc/zipball/68fd06c26086de4732bbe7a26ae1355afa0743c9",
+                "reference": "68fd06c26086de4732bbe7a26ae1355afa0743c9",
+                "shasum": ""
+            },
+            "require": {
+                "cocur/slugify": "^1.0|^2.0|^3.0|^4.0",
+                "ext-dom": "*",
+                "knplabs/knp-menu": "^3.0",
+                "masterminds/html5": "^2.1",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.5|^8.0|^9.0",
+                "squizlabs/php_codesniffer": "^3.5",
+                "twig/twig": "^2.4|^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TOC\\": [
+                        "src/",
+                        "tests/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Casey McLaughlin",
+                    "email": "caseyamcl@gmail.com",
+                    "homepage": "http://caseymclaughlin.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simple Table-of-Contents Generator for PHP.  Generates TOCs based off H1...H6 tags",
+            "homepage": "http://github.com/caseyamcl/toc",
+            "keywords": [
+                "TOC",
+                "table of contents"
+            ],
+            "support": {
+                "issues": "https://github.com/caseyamcl/toc/issues",
+                "source": "https://github.com/caseyamcl/toc/tree/v2.3.1"
+            },
+            "time": "2020-08-20T17:45:06+00:00"
+        },
+        {
+            "name": "cocur/slugify",
+            "version": "v4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cocur/slugify.git",
+                "reference": "3f1ffc300f164f23abe8b64ffb3f92d35cec8307"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cocur/slugify/zipball/3f1ffc300f164f23abe8b64ffb3f92d35cec8307",
+                "reference": "3f1ffc300f164f23abe8b64ffb3f92d35cec8307",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=7.0"
+            },
+            "conflict": {
+                "symfony/config": "<3.4 || >=4,<4.3",
+                "symfony/dependency-injection": "<3.4 || >=4,<4.3",
+                "symfony/http-kernel": "<3.4 || >=4,<4.3",
+                "twig/twig": "<2.12.1"
+            },
+            "require-dev": {
+                "laravel/framework": "~5.1",
+                "latte/latte": "~2.2",
+                "league/container": "^2.2.0",
+                "mikey179/vfsstream": "~1.6.8",
+                "mockery/mockery": "^1.3",
+                "nette/di": "~2.4",
+                "phpunit/phpunit": "^5.7.27",
+                "pimple/pimple": "~1.1",
+                "plumphp/plum": "~0.1",
+                "symfony/config": "^3.4 || ^4.3 || ^5.0",
+                "symfony/dependency-injection": "^3.4 || ^4.3 || ^5.0",
+                "symfony/http-kernel": "^3.4 || ^4.3 || ^5.0",
+                "twig/twig": "^2.12.1 || ~3.0",
+                "zendframework/zend-modulemanager": "~2.2",
+                "zendframework/zend-servicemanager": "~2.2",
+                "zendframework/zend-view": "~2.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Cocur\\Slugify\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Florian Eckerstorfer",
+                    "email": "florian@eckerstorfer.co",
+                    "homepage": "https://florian.ec"
+                },
+                {
+                    "name": "Ivo Bathke",
+                    "email": "ivo.bathke@gmail.com"
+                }
+            ],
+            "description": "Converts a string into a slug.",
+            "keywords": [
+                "slug",
+                "slugify"
+            ],
+            "support": {
+                "issues": "https://github.com/cocur/slugify/issues",
+                "source": "https://github.com/cocur/slugify/tree/master"
+            },
+            "time": "2019-12-14T13:04:14+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -158,8 +291,111 @@
             "time": "2020-05-29T15:13:26+00:00"
         },
         {
+            "name": "fzaninotto/faker",
+            "version": "v1.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fzaninotto/Faker.git",
+                "reference": "fc10d778e4b84d5bd315dad194661e091d307c6f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/fc10d778e4b84d5bd315dad194661e091d307c6f",
+                "reference": "fc10d778e4b84d5bd315dad194661e091d307c6f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.3 || ^7.0"
+            },
+            "require-dev": {
+                "ext-intl": "*",
+                "phpunit/phpunit": "^4.8.35 || ^5.7",
+                "squizlabs/php_codesniffer": "^2.9.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Faker\\": "src/Faker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Zaninotto"
+                }
+            ],
+            "description": "Faker is a PHP library that generates fake data for you.",
+            "keywords": [
+                "data",
+                "faker",
+                "fixtures"
+            ],
+            "support": {
+                "issues": "https://github.com/fzaninotto/Faker/issues",
+                "source": "https://github.com/fzaninotto/Faker/tree/v1.9.1"
+            },
+            "abandoned": true,
+            "time": "2019-12-12T13:22:17+00:00"
+        },
+        {
+            "name": "hautelook/phpass",
+            "version": "0.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hautelook/phpass.git",
+                "reference": "b4cbd9b67ed3ef5672ec79d8e0c46d24bd844abd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hautelook/phpass/zipball/b4cbd9b67ed3ef5672ec79d8e0c46d24bd844abd",
+                "reference": "b4cbd9b67ed3ef5672ec79d8e0c46d24bd844abd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Hautelook": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Public Domain"
+            ],
+            "authors": [
+                {
+                    "name": "Solar Designer",
+                    "email": "solar@openwall.com",
+                    "homepage": "http://openwall.com/phpass/"
+                }
+            ],
+            "description": "Portable PHP password hashing framework",
+            "homepage": "http://github.com/hautelook/phpass/",
+            "keywords": [
+                "blowfish",
+                "crypt",
+                "password",
+                "security"
+            ],
+            "support": {
+                "issues": "https://github.com/hautelook/phpass/issues",
+                "source": "https://github.com/hautelook/phpass/tree/0.3.x"
+            },
+            "time": "2012-08-31T00:00:00+00:00"
+        },
+        {
             "name": "illuminate/cache",
-            "version": "v7.29.2",
+            "version": "v7.29.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/cache.git",
@@ -214,7 +450,7 @@
         },
         {
             "name": "illuminate/config",
-            "version": "v7.29.2",
+            "version": "v7.29.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/config.git",
@@ -262,7 +498,7 @@
         },
         {
             "name": "illuminate/console",
-            "version": "v7.29.2",
+            "version": "v7.29.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/console.git",
@@ -320,7 +556,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v7.29.2",
+            "version": "v7.29.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -371,7 +607,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v7.29.2",
+            "version": "v7.29.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -418,8 +654,74 @@
             "time": "2020-10-27T15:11:37+00:00"
         },
         {
+            "name": "illuminate/database",
+            "version": "v7.29.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/database.git",
+                "reference": "c942d21225bed7bcacd43ac6a6c5c6d46d403f11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/c942d21225bed7bcacd43ac6a6c5c6d46d403f11",
+                "reference": "c942d21225bed7bcacd43ac6a6c5c6d46d403f11",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/container": "^7.0",
+                "illuminate/contracts": "^7.0",
+                "illuminate/support": "^7.0",
+                "php": "^7.2.5|^8.0",
+                "symfony/console": "^5.0"
+            },
+            "suggest": {
+                "doctrine/dbal": "Required to rename columns and drop SQLite columns (^2.6).",
+                "fakerphp/faker": "Required to use the eloquent factory builder (^1.9.1).",
+                "illuminate/console": "Required to use the database commands (^7.0).",
+                "illuminate/events": "Required to use the observers with Eloquent (^7.0).",
+                "illuminate/filesystem": "Required to use the migrations (^7.0).",
+                "illuminate/pagination": "Required to paginate the result set (^7.0).",
+                "symfony/finder": "Required to use Eloquent model factories (^5.0)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "7.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Database\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Database package.",
+            "homepage": "https://laravel.com",
+            "keywords": [
+                "database",
+                "laravel",
+                "orm",
+                "sql"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/framework/issues",
+                "source": "https://github.com/laravel/framework"
+            },
+            "time": "2020-10-31T18:37:57+00:00"
+        },
+        {
             "name": "illuminate/events",
-            "version": "v7.29.2",
+            "version": "v7.29.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -468,7 +770,7 @@
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v7.29.2",
+            "version": "v7.29.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
@@ -527,16 +829,16 @@
         },
         {
             "name": "illuminate/http",
-            "version": "v7.29.2",
+            "version": "v7.29.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/http.git",
-                "reference": "83359be43b6795fdd7de9b7fcc986dd16978f867"
+                "reference": "21588f79503b6240ee7bc23f6e59d12a168266ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/http/zipball/83359be43b6795fdd7de9b7fcc986dd16978f867",
-                "reference": "83359be43b6795fdd7de9b7fcc986dd16978f867",
+                "url": "https://api.github.com/repos/illuminate/http/zipball/21588f79503b6240ee7bc23f6e59d12a168266ba",
+                "reference": "21588f79503b6240ee7bc23f6e59d12a168266ba",
                 "shasum": ""
             },
             "require": {
@@ -579,11 +881,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2020-10-27T15:11:37+00:00"
+            "time": "2020-11-02T03:46:23+00:00"
         },
         {
             "name": "illuminate/log",
-            "version": "v7.29.2",
+            "version": "v7.29.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/log.git",
@@ -631,8 +933,57 @@
             "time": "2020-10-27T15:11:37+00:00"
         },
         {
+            "name": "illuminate/pagination",
+            "version": "v7.29.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/pagination.git",
+                "reference": "ba0940dc07dde18249f4f46573969f8d87197a3e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/pagination/zipball/ba0940dc07dde18249f4f46573969f8d87197a3e",
+                "reference": "ba0940dc07dde18249f4f46573969f8d87197a3e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/contracts": "^7.0",
+                "illuminate/support": "^7.0",
+                "php": "^7.2.5|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "7.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Pagination\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Pagination package.",
+            "homepage": "https://laravel.com",
+            "support": {
+                "issues": "https://github.com/laravel/framework/issues",
+                "source": "https://github.com/laravel/framework"
+            },
+            "time": "2020-10-27T15:11:37+00:00"
+        },
+        {
             "name": "illuminate/session",
-            "version": "v7.29.2",
+            "version": "v7.29.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/session.git",
@@ -687,7 +1038,7 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v7.29.2",
+            "version": "v7.29.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
@@ -753,7 +1104,7 @@
         },
         {
             "name": "illuminate/view",
-            "version": "v7.29.2",
+            "version": "v7.29.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
@@ -802,6 +1153,135 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2020-10-27T15:11:37+00:00"
+        },
+        {
+            "name": "jgrossi/corcel",
+            "version": "v4.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/corcel/corcel.git",
+                "reference": "8d02e251a595278111dbe737f5f9887a8c0a4605"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/corcel/corcel/zipball/8d02e251a595278111dbe737f5f9887a8c0a4605",
+                "reference": "8d02e251a595278111dbe737f5f9887a8c0a4605",
+                "shasum": ""
+            },
+            "require": {
+                "fzaninotto/faker": "^1.9",
+                "hautelook/phpass": "0.3.*",
+                "illuminate/database": "^7.0",
+                "illuminate/filesystem": "^7.0",
+                "illuminate/support": "^7.0",
+                "php": ">=7.2.5",
+                "thunderer/shortcode": "^0.7.3"
+            },
+            "replace": {
+                "juniorgrossi/corcel": "self.version"
+            },
+            "require-dev": {
+                "dms/phpunit-arraysubset-asserts": "^0.1.0",
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "^5.0",
+                "symfony/thanks": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Corcel\\Laravel\\CorcelServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Corcel\\": "src/",
+                    "Corcel\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Junior Grossi",
+                    "email": "juniorgro@gmail.com",
+                    "homepage": "http://jgrossi.com"
+                }
+            ],
+            "description": "Use WordPress backend with Laravel or any PHP framework",
+            "homepage": "http://github.com/corcel/corcel",
+            "support": {
+                "issues": "https://github.com/corcel/corcel/issues",
+                "source": "https://github.com/corcel/corcel/tree/4.0"
+            },
+            "time": "2020-07-28T20:57:25+00:00"
+        },
+        {
+            "name": "johnbillion/extended-cpts",
+            "version": "4.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnbillion/extended-cpts.git",
+                "reference": "512b3f20b3c6cda34f6bf7d892623d0daebff9ca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnbillion/extended-cpts/zipball/512b3f20b3c6cda34f6bf7d892623d0daebff9ca",
+                "reference": "512b3f20b3c6cda34f6bf7d892623d0daebff9ca",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "automattic/phpcs-neutron-standard": "1.5.4",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.5",
+                "johnbillion/falsey-assertequals-detector": "^2",
+                "johnbillion/php-docs-standards": "^1",
+                "phpcompatibility/phpcompatibility-wp": "^2",
+                "phpunit/phpunit": "^6",
+                "roots/wordpress": "*",
+                "vlucas/phpdotenv": "^3",
+                "wp-cli/wp-cli-bundle": "^2.1",
+                "wp-coding-standards/wpcs": "2.1.1",
+                "wp-phpunit/wp-phpunit": "*"
+            },
+            "suggest": {
+                "seravo/wp-custom-bulk-actions": "Custom Bulk Actions",
+                "wpackagist-plugin/rewrite-testing": "Rewrite Rule Testing"
+            },
+            "type": "library",
+            "extra": {
+                "wordpress-install-dir": "tests/wordpress"
+            },
+            "autoload": {
+                "psr-4": {
+                    "ExtCPTs\\Tests\\": "tests/phpunit"
+                },
+                "files": [
+                    "extended-cpts.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "John Blackbourn",
+                    "homepage": "https://johnblackbourn.com/"
+                }
+            ],
+            "description": "A library which provides extended functionality to WordPress custom post types and taxonomies.",
+            "homepage": "https://github.com/johnbillion/extended-cpts/",
+            "support": {
+                "issues": "https://github.com/johnbillion/extended-cpts/issues",
+                "source": "https://github.com/johnbillion/extended-cpts/tree/develop"
+            },
+            "time": "2020-07-08T19:34:12+00:00"
         },
         {
             "name": "kirki-framework/compatibility",
@@ -1866,6 +2346,78 @@
             "time": "2020-04-26T10:22:13+00:00"
         },
         {
+            "name": "knplabs/knp-menu",
+            "version": "v3.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KnpLabs/KnpMenu.git",
+                "reference": "9996764bc4bdc4381ecdc4617817de23948f0cdb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/9996764bc4bdc4381ecdc4617817de23948f0cdb",
+                "reference": "9996764bc4bdc4381ecdc4617817de23948f0cdb",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "conflict": {
+                "twig/twig": "<1.40 || >=2,<2.9"
+            },
+            "require-dev": {
+                "phpspec/prophecy": "^1.8",
+                "psr/container": "^1.0",
+                "symfony/http-foundation": "^3.4 || ^4.2|| ^5.0",
+                "symfony/phpunit-bridge": "^3.3 || ^4.2|| ^5.0",
+                "symfony/routing": "^3.4 || ^4.2|| ^5.0",
+                "twig/twig": "^1.40 || ^2.9 || ^3.0"
+            },
+            "suggest": {
+                "twig/twig": "for the TwigRenderer and the integration with your templates"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Knp\\Menu\\": "src/Knp/Menu"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "KnpLabs",
+                    "homepage": "https://knplabs.com"
+                },
+                {
+                    "name": "Christophe Coevoet",
+                    "email": "stof@notk.org"
+                },
+                {
+                    "name": "The Community",
+                    "homepage": "https://github.com/KnpLabs/KnpMenu/contributors"
+                }
+            ],
+            "description": "An object oriented menu library",
+            "homepage": "https://knplabs.com",
+            "keywords": [
+                "menu",
+                "tree"
+            ],
+            "support": {
+                "issues": "https://github.com/KnpLabs/KnpMenu/issues",
+                "source": "https://github.com/KnpLabs/KnpMenu/tree/master"
+            },
+            "time": "2020-08-15T08:01:46+00:00"
+        },
+        {
             "name": "league/flysystem",
             "version": "1.1.3",
             "source": {
@@ -2016,6 +2568,114 @@
             "time": "2020-10-18T11:50:25+00:00"
         },
         {
+            "name": "log1x/acf-composer",
+            "version": "v1.5.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Log1x/acf-composer.git",
+                "reference": "a096aa3bbc86a817a6ebfa3c0848c25c7bbc633e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Log1x/acf-composer/zipball/a096aa3bbc86a817a6ebfa3c0848c25c7bbc633e",
+                "reference": "a096aa3bbc86a817a6ebfa3c0848c25c7bbc633e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "stoutlogic/acf-builder": "^1.10"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "suggest": {
+                "log1x/modern-acf-options": "Gives ACF option pages a much needed design overhaul.",
+                "log1x/sage-directives": "Provides Sage-specific Blade directives for use with WordPress and ACF within your views."
+            },
+            "type": "package",
+            "extra": {
+                "acorn": {
+                    "providers": [
+                        "Log1x\\AcfComposer\\Providers\\AcfComposerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Log1x\\AcfComposer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brandon Nifong",
+                    "email": "brandon@tendency.me"
+                }
+            ],
+            "description": "Create fields, blocks, option pages, and widgets using ACF Builder and Sage 10",
+            "support": {
+                "issues": "https://github.com/Log1x/acf-composer/issues",
+                "source": "https://github.com/Log1x/acf-composer/tree/v1.5.5"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Log1x",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-10-30T09:02:03+00:00"
+        },
+        {
+            "name": "log1x/gutentweaks",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Log1x/gutentweaks.git",
+                "reference": "aaf52ef0fc7d2b148ee8170868b1c6ef873b7ff6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Log1x/gutentweaks/zipball/aaf52ef0fc7d2b148ee8170868b1c6ef873b7ff6",
+                "reference": "aaf52ef0fc7d2b148ee8170868b1c6ef873b7ff6",
+                "shasum": ""
+            },
+            "require": {
+                "matthiasmullie/minify": "^1.3",
+                "php": ">=7.2.5"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Log1x\\GutenTweaks\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A plugin containing minor Gutenberg tweaks.",
+            "keywords": [
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/Log1x/gutentweaks/issues",
+                "source": "https://github.com/Log1x/gutentweaks/tree/v1.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Log1x",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-11-10T05:55:58+00:00"
+        },
+        {
             "name": "log1x/navi",
             "version": "v1.0.6",
             "source": {
@@ -2071,6 +2731,69 @@
                 "source": "https://github.com/Log1x/navi/tree/v1.0.6"
             },
             "time": "2020-02-04T16:12:56+00:00"
+        },
+        {
+            "name": "log1x/poet",
+            "version": "v1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Log1x/poet.git",
+                "reference": "0d183c1794c4ef56e5975209b1b92cee368aa404"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Log1x/poet/zipball/0d183c1794c4ef56e5975209b1b92cee368aa404",
+                "reference": "0d183c1794c4ef56e5975209b1b92cee368aa404",
+                "shasum": ""
+            },
+            "require": {
+                "caseyamcl/toc": "^2.2",
+                "johnbillion/extended-cpts": "^4.3",
+                "php": ">=7.2.5"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "package",
+            "extra": {
+                "acorn": {
+                    "providers": [
+                        "Log1x\\Poet\\PoetServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Log1x\\Poet\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brandon Nifong",
+                    "email": "brandon@tendency.me"
+                }
+            ],
+            "description": "Configuration-based post type, taxonomy, editor color palette, block category, and block registration for Sage 10.",
+            "keywords": [
+                "cpt",
+                "gutenberg",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/log1x/poet/issues",
+                "source": "https://github.com/Log1x/poet/tree/v1.1.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Log1x",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-09-23T00:48:40+00:00"
         },
         {
             "name": "log1x/sage-directives",
@@ -2197,6 +2920,192 @@
                 }
             ],
             "time": "2020-04-30T00:34:52+00:00"
+        },
+        {
+            "name": "masterminds/html5",
+            "version": "2.7.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Masterminds/html5-php.git",
+                "reference": "9227822783c75406cfe400984b2f095cdf03d417"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/9227822783c75406cfe400984b2f095cdf03d417",
+                "reference": "9227822783c75406cfe400984b2f095cdf03d417",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Masterminds\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matt Butcher",
+                    "email": "technosophos@gmail.com"
+                },
+                {
+                    "name": "Matt Farina",
+                    "email": "matt@mattfarina.com"
+                },
+                {
+                    "name": "Asmir Mustafic",
+                    "email": "goetas@gmail.com"
+                }
+            ],
+            "description": "An HTML5 parser and serializer.",
+            "homepage": "http://masterminds.github.io/html5-php",
+            "keywords": [
+                "HTML5",
+                "dom",
+                "html",
+                "parser",
+                "querypath",
+                "serializer",
+                "xml"
+            ],
+            "support": {
+                "issues": "https://github.com/Masterminds/html5-php/issues",
+                "source": "https://github.com/Masterminds/html5-php/tree/2.7.4"
+            },
+            "time": "2020-10-01T13:52:52+00:00"
+        },
+        {
+            "name": "matthiasmullie/minify",
+            "version": "1.3.63",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/matthiasmullie/minify.git",
+                "reference": "9ba1b459828adc13430f4dd6c49dae4950dc4117"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/matthiasmullie/minify/zipball/9ba1b459828adc13430f4dd6c49dae4950dc4117",
+                "reference": "9ba1b459828adc13430f4dd6c49dae4950dc4117",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pcre": "*",
+                "matthiasmullie/path-converter": "~1.1",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "~2.0",
+                "matthiasmullie/scrapbook": "~1.0",
+                "phpunit/phpunit": "~4.8"
+            },
+            "suggest": {
+                "psr/cache-implementation": "Cache implementation to use with Minify::cache"
+            },
+            "bin": [
+                "bin/minifycss",
+                "bin/minifyjs"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MatthiasMullie\\Minify\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthias Mullie",
+                    "email": "minify@mullie.eu",
+                    "homepage": "http://www.mullie.eu",
+                    "role": "Developer"
+                }
+            ],
+            "description": "CSS & JavaScript minifier, in PHP. Removes whitespace, strips comments, combines files (incl. @import statements and small assets in CSS files), and optimizes/shortens a few common programming patterns.",
+            "homepage": "http://www.minifier.org",
+            "keywords": [
+                "JS",
+                "css",
+                "javascript",
+                "minifier",
+                "minify"
+            ],
+            "support": {
+                "issues": "https://github.com/matthiasmullie/minify/issues",
+                "source": "https://github.com/matthiasmullie/minify/tree/1.3.63"
+            },
+            "time": "2020-01-21T20:21:08+00:00"
+        },
+        {
+            "name": "matthiasmullie/path-converter",
+            "version": "1.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/matthiasmullie/path-converter.git",
+                "reference": "e7d13b2c7e2f2268e1424aaed02085518afa02d9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/matthiasmullie/path-converter/zipball/e7d13b2c7e2f2268e1424aaed02085518afa02d9",
+                "reference": "e7d13b2c7e2f2268e1424aaed02085518afa02d9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pcre": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MatthiasMullie\\PathConverter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthias Mullie",
+                    "email": "pathconverter@mullie.eu",
+                    "homepage": "http://www.mullie.eu",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Relative path converter",
+            "homepage": "http://github.com/matthiasmullie/path-converter",
+            "keywords": [
+                "converter",
+                "path",
+                "paths",
+                "relative"
+            ],
+            "support": {
+                "issues": "https://github.com/matthiasmullie/path-converter/issues",
+                "source": "https://github.com/matthiasmullie/path-converter/tree/1.1.3"
+            },
+            "time": "2019-02-05T23:41:09+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -3089,6 +3998,52 @@
                 }
             ],
             "time": "2019-01-28T09:46:14+00:00"
+        },
+        {
+            "name": "stoutlogic/acf-builder",
+            "version": "1.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/StoutLogic/acf-builder.git",
+                "reference": "1fbdb58ad46ac77d6df2549aad130854f5e69cf2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/StoutLogic/acf-builder/zipball/1fbdb58ad46ac77d6df2549aad130854f5e69cf2",
+                "reference": "1fbdb58ad46ac77d6df2549aad130854f5e69cf2",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/inflector": "^1.1|^2.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpdocumentor/reflection-docblock": "2.*",
+                "phpunit/phpunit": "4.*",
+                "squizlabs/php_codesniffer": "^2.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "StoutLogic\\AcfBuilder\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Steve Pfisterer",
+                    "email": "steve@stoutlogic.com"
+                }
+            ],
+            "description": "An Advanced Custom Field Configuration Builder",
+            "support": {
+                "issues": "https://github.com/StoutLogic/acf-builder/issues",
+                "source": "https://github.com/StoutLogic/acf-builder/tree/1.10.0"
+            },
+            "time": "2020-07-02T01:15:41+00:00"
         },
         {
             "name": "symfony/console",
@@ -5011,24 +5966,141 @@
             "time": "2020-10-27T10:11:13+00:00"
         },
         {
-            "name": "voku/portable-ascii",
-            "version": "1.5.3",
+            "name": "thunderer/shortcode",
+            "version": "v0.7.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/voku/portable-ascii.git",
-                "reference": "25bcbf01678930251fd572891447d9e318a6e2b8"
+                "url": "https://github.com/thunderer/Shortcode.git",
+                "reference": "79a219febd774ba1ee66a2992fee1145b4367561"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/25bcbf01678930251fd572891447d9e318a6e2b8",
-                "reference": "25bcbf01678930251fd572891447d9e318a6e2b8",
+                "url": "https://api.github.com/repos/thunderer/Shortcode/zipball/79a219febd774ba1ee66a2992fee1145b4367561",
+                "reference": "79a219febd774ba1ee66a2992fee1145b4367561",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=4.1",
+                "symfony/yaml": ">=2.0"
+            },
+            "suggest": {
+                "ext-dom": "if you want to use XML serializer",
+                "ext-json": "if you want to use JSON serializer",
+                "symfony/yaml": "if you want to use YAML serializer"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Thunder\\Shortcode\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomasz Kowalczyk",
+                    "email": "tomasz@kowalczyk.cc"
+                }
+            ],
+            "description": "Advanced shortcode (BBCode) parser and engine for PHP",
+            "keywords": [
+                "bbcode",
+                "engine",
+                "library",
+                "parser",
+                "shortcode"
+            ],
+            "support": {
+                "issues": "https://github.com/thunderer/Shortcode/issues",
+                "source": "https://github.com/thunderer/Shortcode/tree/v0.7.4"
+            },
+            "time": "2020-03-08T11:25:13+00:00"
+        },
+        {
+            "name": "tiny-pixel/acorn-db",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zirkeldesign/acorn-db.git",
+                "reference": "7692e575ddcdfedf851610b4a6101cc83f3d785f"
+            },
+            "require": {
+                "fzaninotto/faker": "^1",
+                "illuminate/container": "^7||^8",
+                "illuminate/database": "^7||^8",
+                "illuminate/pagination": "^7||^8",
+                "jgrossi/corcel": "^4.0||^5.0",
+                "php": ">=7.3",
+                "symfony/console": "^5"
+            },
+            "require-dev": {
+                "illuminate/console": "^7.25||^8.0",
+                "roots/acorn": "^1.0.9",
+                "roots/support": "dev-master",
+                "squizlabs/php_codesniffer": "^3.4.2"
+            },
+            "default-branch": true,
+            "type": "package",
+            "extra": {
+                "acorn": {
+                    "providers": [
+                        "AcornDB\\Providers\\PaginationServiceProvider",
+                        "AcornDB\\Providers\\DatabaseServiceProvider",
+                        "AcornDB\\Providers\\MigrationServiceProvider",
+                        "AcornDB\\Providers\\PackageServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AcornDB\\": "src/",
+                    "Corcel\\": "src/"
+                }
+            },
+            "scripts": {
+                "lint": [
+                    "phpcs --ignore=vendor,publishes --extensions=php --standard=PSR12 ."
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kelly Mears",
+                    "email": "kelly@tinypixel.dev"
+                }
+            ],
+            "description": "Eloquent database support for Acorn projects",
+            "support": {
+                "issues": "https://github.com/pixelcollective/acorn-db/issues"
+            },
+            "time": "2020-11-06T11:04:55+00:00"
+        },
+        {
+            "name": "voku/portable-ascii",
+            "version": "1.5.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/voku/portable-ascii.git",
+                "reference": "87dc337d4200b32717dd3849fea846319e897658"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/87dc337d4200b32717dd3849fea846319e897658",
+                "reference": "87dc337d4200b32717dd3849fea846319e897658",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.0.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~6.0 || ~7.0"
+                "phpunit/phpunit": "~6.0 || ~7.0 || ~9.0"
             },
             "suggest": {
                 "ext-intl": "Use Intl for transliterator_transliterate() support"
@@ -5058,7 +6130,7 @@
             ],
             "support": {
                 "issues": "https://github.com/voku/portable-ascii/issues",
-                "source": "https://github.com/voku/portable-ascii/tree/master"
+                "source": "https://github.com/voku/portable-ascii/tree/1.5.4"
             },
             "funding": [
                 {
@@ -5082,22 +6154,68 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-22T23:32:04+00:00"
+            "time": "2020-11-08T21:15:15+00:00"
+        },
+        {
+            "name": "zirkeldesign/circle",
+            "version": "0.0.1",
+            "dist": {
+                "type": "path",
+                "url": "/Users/dcsturm/wrk/packages/composer/circle",
+                "reference": "068441cc0249f49e067cc5717d1ae3c9a9e14bc2"
+            },
+            "require": {
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "filp/whoops": "^2.7",
+                "roots/acorn": "^1.1",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "extra": {
+                "acorn": {
+                    "providers": [
+                        "ZD\\Circle\\Providers\\CircleServiceProvider"
+                    ],
+                    "aliases": {
+                        "Circle": "ZD\\Circle\\Facades\\Circle"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ZD\\Circle\\": "src/"
+                }
+            },
+            "scripts": {
+                "lint": [
+                    "phpcs --colors --ignore=index.php,vendor,resources,storage,dist --extensions=php --standard=PSR12 src"
+                ],
+                "fix": [
+                    "phpcbf -q --ignore=index.php,vendor,resources,storage,dist --extensions=php --standard=PSR12 src",
+                    "composer lint"
+                ]
+            },
+            "transport-options": {
+                "symlink": true,
+                "relative": false
+            }
         }
     ],
     "packages-dev": [
         {
             "name": "filp/whoops",
-            "version": "2.9.0",
+            "version": "2.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "2ec31f3adc54c71a59c5e3c2143d7a0e2f8899f8"
+                "reference": "307fb34a5ab697461ec4c9db865b20ff2fd40771"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/2ec31f3adc54c71a59c5e3c2143d7a0e2f8899f8",
-                "reference": "2ec31f3adc54c71a59c5e3c2143d7a0e2f8899f8",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/307fb34a5ab697461ec4c9db865b20ff2fd40771",
+                "reference": "307fb34a5ab697461ec4c9db865b20ff2fd40771",
                 "shasum": ""
             },
             "require": {
@@ -5147,9 +6265,9 @@
             ],
             "support": {
                 "issues": "https://github.com/filp/whoops/issues",
-                "source": "https://github.com/filp/whoops/tree/2.9.0"
+                "source": "https://github.com/filp/whoops/tree/2.9.1"
             },
-            "time": "2020-10-20T12:00:00+00:00"
+            "time": "2020-11-01T12:00:00+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -5215,7 +6333,8 @@
         "kirki-framework/field-multicolor": 20,
         "kirki-framework/module-css": 20,
         "kirki-framework/module-editor-styles": 20,
-        "kirki-framework/module-panels": 20
+        "kirki-framework/module-panels": 20,
+        "tiny-pixel/acorn-db": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

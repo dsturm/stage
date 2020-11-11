@@ -1,0 +1,28 @@
+// @import '../../components/group';
+
+.wp-block-group {
+  main > &:not(.py-0) {
+    @apply py-6;
+
+    @screen md {
+      @apply py-12;
+    }
+
+    @screen lg {
+      @apply py-16;
+    }
+
+    @screen xl {
+      @apply py-20;
+    }
+
+    @screen xxl {
+      @apply py-24;
+    }
+  }
+
+  // TODO: Remove this hack.
+  main > &.py-0 + &.py-0 .container {
+    @apply pt-0;
+  }
+}

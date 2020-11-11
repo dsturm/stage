@@ -6,3 +6,6 @@
 # Error Logs
 npm-debug.log
 yarn-error.log
+
+# Temp
+.DS_Store

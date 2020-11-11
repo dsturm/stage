@@ -1,5 +1,5 @@
 {
-  "name": "ouun/stage",
+  "name": "zirkeldesign/wp-theme-ibb-karriere",
   "type": "wordpress-theme",
   "license": "MIT",
   "description": "WordPress Theme Framework based on Roots Sage",
@@ -22,6 +22,26 @@
       "Stage\\": "app/"
     }
   },
+  "repositories": {
+    "tiny-pixel/acorn-db": {
+      "type": "git",
+      "url": "https://github.com/zirkeldesign/acorn-db.git"
+    },
+    "livewire/livewire-local": {
+      "type": "path",
+      "url": "/Users/dcsturm/wrk/packages/composer/livewire",
+      "options": {
+        "symlink": true
+      }
+    },
+    "zirkeldesign/circle-locale": {
+      "type": "path",
+      "url": "/Users/dcsturm/wrk/packages/composer/circle",
+      "options": {
+        "symlink": true
+      }
+    }
+  },
   "require": {
     "php": "^7.2.5",
     "kirki-framework/compatibility": "dev-master",
@@ -37,14 +57,19 @@
     "kirki-framework/module-sections": "^1.0",
     "kirki-framework/module-selective-refresh": "^1.0",
     "kirki-framework/module-webfonts": "^1.0",
+    "log1x/acf-composer": "^1.5",
+    "log1x/gutentweaks": "^1.0",
     "log1x/navi": "^1.0",
+    "log1x/poet": "^1.1",
     "log1x/sage-directives": "^1.1",
     "log1x/sage-svg": "^1.0",
     "ouun/kirki-module-fonts_upload": "^1.0",
     "ouun/kirki-module-sync_controls": "^1.0",
     "ouun/stage-laravel-tailwind-config": "^1.0",
     "ouun/stage-woocommerce": "^1.0",
-    "roots/acorn": "^1.1"
+    "roots/acorn": "^1.1",
+    "tiny-pixel/acorn-db": "dev-master",
+    "zirkeldesign/circle": "^0.0.1"
   },
   "require-dev": {
     "filp/whoops": "^2.5",

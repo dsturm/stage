@@ -1,10 +1,22 @@
-@import "../config/font-sizes";
+@import '../config/font-sizes';
 
 /* WP Blocks font sizes */
 @each $name, $size in $font-sizes {
   .has-#{$name}-font-size {
     font-size: var(--font-size-#{$name});
   }
+}
+
+.has-text-align-left {
+  @apply text-left;
+}
+
+.has-text-align-center {
+  @apply text-center;
+}
+
+.has-text-align-right {
+  @apply text-right;
 }
 
 /* WP Blocks font families & weights */
@@ -22,5 +34,5 @@
   font-family: var(--copy-font-family);
   font-weight: var(--copy-font-weight);
 
-  @import "../common/typo";
+  @import '../common/typo';
 }

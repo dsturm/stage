@@ -1,5 +1,21 @@
 @import "../../components/buttons";
 
+.wp-block-buttons {
+  @apply flex;
+
+  &.alignleft {
+    @apply justify-start;
+  }
+
+  &.alignright {
+    @apply justify-end;
+  }
+
+  &.aligncenter {
+    @apply justify-center;
+  }
+}
+
 .wp-block-button {
   .wp-block-button__link {
     @extend %button-base-text;

@@ -4,6 +4,9 @@
 import { router } from 'js-dom-router';
 import 'jquery';
 
+import 'typeface-open-sans';
+import 'typeface-inter';
+
 /**
  * DOM-based routing
  */

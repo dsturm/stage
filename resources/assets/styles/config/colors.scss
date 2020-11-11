@@ -1,43 +1,35 @@
 /**
- * Must reflect tailwind.config.js
- * And registered pallets from defaults.php
+ * Must reflect tailwind-config-js
+ * And registered pallets from defaults-php
  */
 
 $colors: (
-  /* Black & White */
-  "black": rgb(0, 0, 0),
-  "white": rgb(255, 255, 255),
-  /* Background */
-  "body": #f9f9f9,
-  /* Text colors */
-  "copy": #333,
-  "heading": #333,
-  /* Link colors */
-  "link": var(--color-copy),
-  "hover": var(--color-blue-dark),
-  /* Brand Colors */
-  "primary": var(--color-blue-dark),
-  "secondary": #dd6b20,
-  /* Red */
-  "red-light":  #feb2b2,
-  "red":        #f56565,
-  "red-dark":   #c53030,
-  /* Green */
-  "green-light": #9ae6b4,
-  "green": #48bb78,
-  "green-dark": #2f855a,
-  /* Blue */
-  "blue-light": #90cdf4,
-  "blue": #4299e1,
-  "blue-dark": #2b6cb0,
-  /* Gray */
-  'gray-100': #f7fafc,
-  'gray-200': #edf2f7,
-  'gray-300': #e2e8f0,
-  'gray-400': #cbd5e0,
-  'gray-500': #a0aec0,
-  'gray-600': #718096,
-  'gray-700': #4a5568,
-  'gray-800': #2d3748,
-  'gray-900': #1a202c,
+  /* Black & White */ 'black': #000,
+  'white': #fff,
+  /* Background */ 'body': #fff,
+  /* Text colors */ 'copy': #3a3f41,
+  'heading': #333,
+  /* Link colors */ 'link': var(--color-copy),
+  'hover': var(--color-primary),
+  /* Brand Colors */ 'primary': var(--color-primary, #0067a4),
+  'secondary': var(--color-secondary, #3db7cc),
+  /* CI colors */
+  'ibb-blue-light': #4d95bf,
+  'ibb-blue-default': #0067a4,
+  'ibb-blue-dark': #005d94,
+  'ibb-turquoise-light': #77cddb,
+  'ibb-turquoise-default': #3db7cc,
+  'ibb-turquoise-dark': #37a5b8,
+  'ibb-salmon-light': #f5ac9a,
+  'ibb-salmon-default': #f1896e,
+  'ibb-salmon-dark': #d97b63,
+  'ibb-yellow-light': #fcdb7a,
+  'ibb-yellow-default': #fbcb41,
+  'ibb-yellow-dark': #e2b73b,
+  'ibb-gray-lightest': #e0e2e4,
+  'ibb-gray-light': #a7aeb2,
+  'ibb-gray-default': #818b91,
+  'ibb-gray-dark': #747d83,
+  'ibb-gray-darkest': #3a3f41,
+  'light-gray': #f2f3f4
 );

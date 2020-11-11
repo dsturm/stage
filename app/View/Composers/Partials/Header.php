@@ -2,8 +2,8 @@
 
 namespace Stage\View\Composers\Partials;
 
+use Log1x\Navi\Facades\Navi;
 use Roots\Acorn\View\Composer;
-
 use function Stage\stage_get_fallback;
 
 class Header extends Composer
@@ -32,6 +32,7 @@ class Header extends Composer
             'site_tagline' => get_bloginfo('description'),
             'show_tagline' => stage_get_fallback('header.branding.show_tagline'),
             'home_url'     => esc_url(home_url('/')),
+            'navigation'   => $this->getPrimaryNavigation(),
             'desktop'      => array(
                 'layout'    => stage_get_fallback('header.desktop.layout', false, true),
                 'position'  => stage_get_fallback('header.desktop.position'), // fixed, sticky, relative, ...
@@ -70,5 +71,19 @@ class Header extends Composer
         );
 
         return implode(' ', apply_filters('stage_header_classes', $classes));
+	}
+
+    /**
+     * Returns the primary navigation.
+     *
+     * @return array
+     */
+    public function getPrimaryNavigation()
+    {
+        if (Navi::build()->isEmpty()) {
+            return;
+        }
+
+        return Navi::build()->toArray();
     }
 }

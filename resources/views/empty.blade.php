@@ -1,3 +1,1 @@
-<?php
-
-  // File is currently required by WooCommerce
+{{-- File is currently required by WooCommerce --}}

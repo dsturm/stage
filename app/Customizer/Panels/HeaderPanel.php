@@ -2,57 +2,55 @@
 
 namespace Stage\Customizer\Panels;
 
-use Stage\Customizer\Controls\LayoutControl;
-use Stage\Customizer\Controls\RangeValueControl;
-use Stage\Customizer\Controls\ToggleControl;
 use Kirki\Compatibility\Kirki;
 use Kirki\Control\ReactSelect;
 use Kirki\Panel;
 use Kirki\Section;
+use function Roots\asset;
+use Stage\Customizer\Controls\LayoutControl;
+use Stage\Customizer\Controls\RangeValueControl;
+use Stage\Customizer\Controls\ToggleControl;
 use Stage\Customizer\Customizer;
-use WP_Customize_Manager;
-
 use function Stage\stage_get_default;
 use function Stage\stage_get_fallback;
 use function Stage\stage_get_fallback_template;
-use function Roots\asset;
+use WP_Customize_Manager;
 
 class HeaderPanel
 {
-
     // Set panel ID
-    private static $panel  = 'header';
+    private static $panel = 'header';
     private static $config = 'header_conf';
 
     public function __construct()
     {
 
-        /**
+        /*
          * Set up config for panel
          */
 
         Kirki::add_config(
             self::$config,
-            array(
+            [
                 'capability'     => 'edit_theme_options',
                 'option_type'    => 'theme_mod',
                 'disable_output' => false,
-            )
+            ]
         );
 
-        /**
+        /*
          * Set up the panel
          */
         new Panel(
             self::$panel,
-            array(
+            [
                 'priority'    => 20,
                 'title'       => esc_attr__('Site Header & Menus', 'stage'),
                 'description' => esc_attr__('Customize the main header and menus.', 'stage'),
-            )
+            ]
         );
 
-        /**
+        /*
          * Init sections with fields
          */
         $this->layout();
@@ -63,23 +61,23 @@ class HeaderPanel
     public function layout()
     {
         // Set section & settings ID
-        $section = self::$panel . '_layout';
+        $section = self::$panel.'_layout';
 
-        /**
+        /*
          * Add Section and fields for Header Layout
          */
         new Section(
             $section,
-            array(
+            [
                 'title'       => esc_attr__('Layout', 'stage'),
                 'description' => esc_attr__('Adjust theme colors.', 'stage'),
                 'panel'       => 'header',
                 'type'        => 'expand',
                 'priority'    => 10,
-            )
+            ]
         );
 
-        /**
+        /*
          * Add Customizer settings & controls.
          *
          * @since 1.0
@@ -95,7 +93,7 @@ class HeaderPanel
                 */
                 $wp_customize->add_setting(
                     'header.desktop.layout',
-                    array(
+                    [
                         'type'              => 'theme_mod',
                         'capability'        => 'edit_theme_options',
                         'default'           => stage_get_default('header.desktop.layout', true),
@@ -103,18 +101,18 @@ class HeaderPanel
                         'sanitize_callback' => function ($layout) {
                             return $layout;
                         },
-                    )
+                    ]
                 );
 
                 $wp_customize->add_control(
                     new LayoutControl(
                         $wp_customize,
                         'header.desktop.layout',
-                        array(
+                        [
                             'type'    => 'layout',
                             'label'   => esc_html__('Header Layout', 'stage'),
                             'section' => $section,
-                            'choices' => array(
+                            'choices' => [
                                 'horizontal-left'   => asset(
                                     'images/header-horizontal-left.svg',
                                     'stage'
@@ -127,8 +125,8 @@ class HeaderPanel
                                     'images/header-horizontal-right.svg',
                                     'stage'
                                 )->uri(),
-                            ),
-                        )
+                            ],
+                        ]
                     )
                 );
 
@@ -137,7 +135,7 @@ class HeaderPanel
                 */
                 $wp_customize->add_setting(
                     'header.search.layout',
-                    array(
+                    [
                         'type'              => 'theme_mod',
                         'capability'        => 'edit_theme_options',
                         'default'           => stage_get_default('header.search.layout', true),
@@ -145,18 +143,18 @@ class HeaderPanel
                         'sanitize_callback' => function ($layout) {
                             return $layout;
                         },
-                    )
+                    ]
                 );
 
                 $wp_customize->add_control(
                     new LayoutControl(
                         $wp_customize,
                         'header.search.layout',
-                        array(
+                        [
                             'type'    => 'layout',
                             'label'   => esc_html__('Search Layout', 'stage'),
                             'section' => $section,
-                            'choices' => array(
+                            'choices' => [
                                 'below-header' => asset(
                                     'images/header-horizontal-left.svg',
                                     'stage'
@@ -165,8 +163,8 @@ class HeaderPanel
                                     'images/header-horizontal-center.svg',
                                     'stage'
                                 )->uri(),
-                            ),
-                        )
+                            ],
+                        ]
                     )
                 );
 
@@ -175,7 +173,7 @@ class HeaderPanel
                 */
                 $wp_customize->add_setting(
                     'header.desktop.position',
-                    array(
+                    [
                         'type'              => 'theme_mod',
                         'capability'        => 'edit_theme_options',
                         'default'           => stage_get_default('header.desktop.position'),
@@ -183,162 +181,162 @@ class HeaderPanel
                         'sanitize_callback' => function ($layout) {
                             return $layout;
                         },
-                    )
+                    ]
                 );
 
                 $wp_customize->add_control(
                     new ReactSelect(
                         $wp_customize,
                         'header.desktop.position',
-                        array(
+                        [
                             'label'   => esc_html__('Header Position', 'stage'),
                             'section' => $section,
-                            'choices' => array(
+                            'choices' => [
                                 'default'          => esc_attr__('Default', 'stage'),
                                 'sticky'           => esc_attr__('Fixed on top', 'stage'),
                                 'sticky auto-hide' => esc_attr__('Auto hide while scrolling', 'stage'),
-                            ),
-                        )
+                            ],
+                        ]
                     )
                 );
 
-                /**
+                /*
                  * Desktop: Header Fullwidth
                  */
                 $wp_customize->add_setting(
                     'header.desktop.fullwidth',
-                    array(
+                    [
                         'type'              => 'theme_mod',
                         'capability'        => 'edit_theme_options',
                         'default'           => stage_get_default('header.desktop.fullwidth'),
                         'transport'         => 'refresh',
-                        'sanitize_callback' => array( 'Stage\Customizer\Controls\ToggleControl', 'sanitize_toggle' ),
-                    )
+                        'sanitize_callback' => ['Stage\Customizer\Controls\ToggleControl', 'sanitize_toggle'],
+                    ]
                 );
 
                 $wp_customize->add_control(
                     new ToggleControl(
                         $wp_customize,
                         'header.desktop.fullwidth',
-                        array(
+                        [
                             'label'    => esc_html__('Fullwidth header', 'stage'),
                             'section'  => $section,
                             'settings' => 'header.desktop.fullwidth',
                             'type'     => 'toggle',
-                        )
+                        ]
                     )
                 );
 
-                /**
+                /*
                  * Desktop: Header Fullwidth
                  */
                 $wp_customize->add_setting(
                     'header.branding.show_tagline',
-                    array(
+                    [
                         'type'              => 'theme_mod',
                         'capability'        => 'edit_theme_options',
                         'default'           => stage_get_default('header.branding.show_tagline'),
                         'transport'         => 'refresh',
-                        'sanitize_callback' => array( 'Stage\Customizer\Controls\ToggleControl', 'sanitize_toggle' ),
-                    )
+                        'sanitize_callback' => ['Stage\Customizer\Controls\ToggleControl', 'sanitize_toggle'],
+                    ]
                 );
 
                 $wp_customize->add_control(
                     new ToggleControl(
                         $wp_customize,
                         'header.branding.show_tagline',
-                        array(
+                        [
                             'label'    => esc_html__('Show Tagline', 'stage'),
                             'section'  => $section,
                             'settings' => 'header.branding.show_tagline',
                             'type'     => 'toggle',
-                        )
+                        ]
                     )
                 );
 
-                /**
+                /*
                  * Desktop: Header Horizontal Padding
                  */
                 $wp_customize->add_setting(
                     'header.desktop.padding-x',
-                    array(
+                    [
                         'type'       => 'theme_mod',
                         'capability' => 'edit_theme_options',
                         'default'    => stage_get_default('header.desktop.padding-x'),
                         'transport'  => 'refresh',
-                    )
+                    ]
                 );
 
                 $wp_customize->add_control(
                     new RangeValueControl(
                         $wp_customize,
                         'header.desktop.padding-x',
-                        array(
+                        [
                             'type'        => 'range-value',
                             'section'     => $section,
                             'settings'    => 'header.desktop.padding-x',
                             'label'       => esc_html__('Horizontal Padding', 'stage'),
-                            'input_attrs' => array(
+                            'input_attrs' => [
                                 'min'    => '0',
                                 'max'    => '12',
                                 'step'   => '2',
                                 'prefix' => '',
                                 'suffix' => '',
-                            ),
-                        )
+                            ],
+                        ]
                     )
                 );
 
-                /**
+                /*
                  * Desktop: Header Vertical Padding
                  */
                 $wp_customize->add_setting(
                     'header.desktop.padding-y',
-                    array(
+                    [
                         'type'       => 'theme_mod',
                         'capability' => 'edit_theme_options',
                         'default'    => stage_get_default('header.desktop.padding-y'),
                         'transport'  => 'refresh',
-                    )
+                    ]
                 );
 
                 $wp_customize->add_control(
                     new RangeValueControl(
                         $wp_customize,
                         'header.desktop.padding-y',
-                        array(
+                        [
                             'type'        => 'range-value',
                             'section'     => $section,
                             'settings'    => 'header.desktop.padding-y',
                             'label'       => esc_html__('Vertical Padding', 'stage'),
-                            'input_attrs' => array(
+                            'input_attrs' => [
                                 'min'    => '0',
                                 'max'    => '10',
                                 'step'   => '2',
                                 'prefix' => '',
                                 'suffix' => '',
-                            ),
-                        )
+                            ],
+                        ]
                     )
                 );
 
                 $wp_customize->selective_refresh->add_partial(
                     'header.desktop.layout',
-                    array(
+                    [
                         'selector'        => 'header.main-header > .header-wrap',
-                        'settings'        => array(
+                        'settings'        => [
                             'header.desktop.layout',
                             'header.desktop.position',
                             'header.desktop.fullwidth',
                             'header.branding.show_tagline',
                             'header.desktop.padding-x',
-                            'header.desktop.padding-y'
-                        ),
+                            'header.desktop.padding-y',
+                        ],
                         'render_callback' => function () {
                             return stage_get_fallback_template(
                                 'header.desktop.layout',
                                 null,
-                                array(
+                                [
                                     'layout'       => stage_get_fallback('header.desktop.layout'),
                                     'position'     => stage_get_fallback('header.desktop.position'),
                                     'fullwidth'    => stage_get_fallback('header.desktop.fullwidth'),
@@ -346,86 +344,84 @@ class HeaderPanel
                                     'site_name'    => get_bloginfo('name'),
                                     'site_tagline' => get_bloginfo('description'),
                                     'show_tagline' => stage_get_fallback('header.branding.show_tagline'),
-                                )
+                                ]
                             );
                         },
-                    )
+                    ]
                 );
             }
         );
     }
 
-
-
     public function typography()
     {
         // Set section & settings ID
-        $section = self::$panel . '_typography';
+        $section = self::$panel.'_typography';
 
         new Section(
             $section,
-            array(
+            [
                 'title'    => esc_attr__('Typography', 'stage'),
                 'panel'    => 'header',
                 'priority' => 30,
-            )
+            ]
         );
 
         Kirki::add_field(
             self::$config,
-            array(
+            [
                 'type'        => 'typography',
                 'settings'    => $section,
                 'label'       => esc_html__('Header Typo', 'stage'),
                 'section'     => $section,
-                'default'     => array(
+                'default'     => [
                     'font-family' => '',
                     'font-weight' => '',
-                ),
-                'choices'     => array(
+                ],
+                'choices'     => [
                     'fonts' => stage_get_default('global.typo.choices.fonts'),
-                ),
+                ],
                 'priority'    => 10,
                 'transport'   => 'auto',
-                'input_attrs' => array(
-                    'font-family' => array(
+                'input_attrs' => [
+                    'font-family' => [
                         'data-sync-master' => 'global_typo_copy[font-family]',
-                    ),
-                    'font-weight' => array(
+                    ],
+                    'font-weight' => [
                         'data-sync-master' => 'global_typo_copy[font-weight]',
-                    ),
-                ),
-                'output'      => array(
-                    array(
+                    ],
+                ],
+                'output'      => [
+                    [
                         'choice'   => 'font-family',
                         'element'  => 'header.main-header',
                         'property' => '--copy-font-family',
-                    ),
-                    array(
+                    ],
+                    [
                         'choice'   => 'font-weight',
                         'element'  => 'header.main-header',
                         'property' => '--heading-font-weight',
-                    ),
-                ),
-            )
+                    ],
+                ],
+            ]
         );
     }
 
     public function colors()
     {
         // Set section & settings ID
-        $section = self::$panel . '_colors';
+        $section = self::$panel.'_colors';
 
-        /**
+        /*
          * Add Section and fields for Header Style
          */
         new Section(
             $section,
-            array(
+            [
                 'title'    => esc_attr__('Colors', 'stage'),
                 'panel'    => self::$panel,
                 'priority' => 20,
-            )
+            ]
         );
     }
 }

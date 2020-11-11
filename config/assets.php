@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
 
     /*
     |--------------------------------------------------------------------------
@@ -31,12 +31,12 @@ return array(
     |
     */
 
-    'manifests' => array(
-        'stage' => array(
+    'manifests' => [
+        'stage' => [
             'strategy' => 'relative',
             'path'     => get_parent_theme_file_path('/dist'),
             'uri'      => get_parent_theme_file_uri('/dist'),
             'manifest' => get_parent_theme_file_path('/dist/mix-manifest.json'),
-        ),
-    ),
-);
+        ],
+    ],
+];

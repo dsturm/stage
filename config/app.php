@@ -2,7 +2,7 @@
 
 use function Roots\env;
 
-return array(
+return [
 
     /*
     |--------------------------------------------------------------------------
@@ -119,8 +119,8 @@ return array(
     |
     */
 
-    'providers'       => array(
-        /**
+    'providers'       => [
+        /*
          * Application Service Providers
          */
         // Stage\Providers\StageServiceProvider::class,
@@ -131,7 +131,7 @@ return array(
         Stage\Providers\ShopFilters::class,
         Stage\Providers\ShopExtras::class,
         Stage\Providers\ShopCheckout::class,
-    ),
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -144,7 +144,7 @@ return array(
     |
     */
 
-    'aliases'         => array(
+    'aliases'         => [
         'App' => Illuminate\Support\Facades\App::class,
         'Arr' => Illuminate\Support\Arr::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
@@ -181,5 +181,5 @@ return array(
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-    ),
-);
+    ],
+];

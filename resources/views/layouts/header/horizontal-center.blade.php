@@ -5,7 +5,7 @@
       @include('layouts.header.navigation.horizontal')
     </nav>
 
-    <div class="absolute left-half top-half transform -translate-x-half -translate-y-half text-black logo-wrap">
+    <div class="absolute text-black transform left-half top-half -translate-x-half -translate-y-half logo-wrap">
       @include('layouts.header.partials.logo')
     </div>
 

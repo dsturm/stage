@@ -2,9 +2,11 @@
 
 namespace Stage\Providers;
 
-use Roots\Acorn\ServiceProvider;
-
 use function Roots\asset;
+
+use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
+use Roots\Acorn\ServiceProvider;
 use function Stage\stage_get_default;
 use function Stage\stage_get_fallback;
 
@@ -45,14 +47,18 @@ class BlockEditor extends ServiceProvider
         $register = array();
         $palettes = array(
             'global.colors.main',
+            'global.colors.palettes',
             'global.colors',
         );
 
         foreach ($palettes as $palette) {
-            $colors = stage_get_default($palette);
+            $colors = Arr::dot(stage_get_default($palette));
 
             if (!empty($colors)) {
                 foreach ($colors as $id => $color) {
+                    if (Str::startsWith($id, 'palettes')) {
+                        continue;
+                    }
                     if (!is_array($color)) {
                         $color = self::registerColor($id, $palette);
 
@@ -67,6 +73,8 @@ class BlockEditor extends ServiceProvider
                 }
             }
         }
+
+        // collect($register)->pluck('color', 'slug')->dd();
 
         return array_values($register);
     }

@@ -5,7 +5,7 @@
         <a class="relative text-inherit border-inherit" href="{{ $item->url }}">
           {{ $item->label }}
 
-          @if($item->children)
+          @if ($item->children)
             @svg('chevron-right', 'float-right w-5 h-auto inline-block align-middle')
           @endif
         </a>

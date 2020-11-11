@@ -1,8 +1,8 @@
-<footer class="py-8 bg-body text-copy w-screen">
+<footer class="w-screen py-8 text-white bg-ibb-blue-500">
   <div class="container footer-inner {{ $desktop['align'] }}">
     @if( $has_widgets )
-      <div class="widgets-wrap my-12">
-        <div class="flex items-stretch justify-between flex-grow -mx-4">
+      <div class="my-12 widgets-wrap">
+        <div class="items-stretch justify-between flex-grow -mx-4 sm:flex">
           @php dynamic_sidebar( 'sidebar-footer' ) @endphp
         </div>
       </div>
