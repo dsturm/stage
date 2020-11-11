@@ -27,12 +27,9 @@
       "type": "git",
       "url": "https://github.com/zirkeldesign/acorn-db.git"
     },
-    "livewire/livewire-local": {
-      "type": "path",
-      "url": "/Users/dcsturm/wrk/packages/composer/livewire",
-      "options": {
-        "symlink": true
-      }
+    "zirkeldesign/circle": {
+      "type": "git",
+      "url": "https://github.com/zirkeldesign/acorn-db.git"
     },
     "zirkeldesign/circle-locale": {
       "type": "path",
