@@ -3,7 +3,6 @@
 namespace Stage\View\Components;
 
 use Roots\Acorn\View\Component;
-use Stage\Models\Job;
 
 class ItemList extends Component
 {

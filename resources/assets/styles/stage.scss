@@ -1,7 +1,7 @@
 @tailwind base;
 
 // PhotoSwipe CSS
-@import "~photoswipe/src/css/main";
+@import '~photoswipe/src/css/main';
 
 /**
  * Tailwind components
@@ -9,53 +9,53 @@
 @tailwind components;
 
 // Custom Components
-@import "common/components";
+@import 'common/components';
 
 // Common
-@import "common/base";
-@import "common/typo";
-@import "common/loader";
-@import "common/alignments";
+@import 'common/base';
+@import 'common/typo';
+@import 'common/loader';
+@import 'common/alignments';
 
 // Components
-@import "components/admin-bar";
-@import "components/animations";
-@import "components/accordion";
-@import "components/breadcrumbs";
-@import "components/buttons";
-@import "components/comments";
-@import "components/forms";
-@import "components/gallery";
-@import "components/icons";
-@import "components/lazy-load";
-@import "components/lists";
-@import "components/loading";
-@import "components/multi-steps";
-@import "components/pagination";
-@import "components/search";
-@import "components/table";
-@import "components/overlay";
-@import "components/widgets";
-@import "components/wp-classes";
+@import 'components/admin-bar';
+@import 'components/animations';
+@import 'components/accordion';
+@import 'components/breadcrumbs';
+@import 'components/buttons';
+@import 'components/comments';
+@import 'components/forms';
+@import 'components/gallery';
+@import 'components/icons';
+@import 'components/lazy-load';
+@import 'components/lists';
+@import 'components/loading';
+@import 'components/multi-steps';
+@import 'components/pagination';
+@import 'components/search';
+@import 'components/table';
+@import 'components/overlay';
+@import 'components/widgets';
+@import 'components/wp-classes';
 
 // Layout
-@import "header/header";
-@import "header/slide-out-menu";
-@import "header/menus/desktop-horizontal";
-@import "header/menus/off-canvas";
-@import "header/search";
-@import "layouts/archive";
-@import "layouts/blog";
-@import "layouts/sidebar";
-@import "layouts/footer";
-@import "layouts/pages";
-@import "layouts/posts";
-@import "layouts/search";
-@import "layouts/single";
-@import "layouts/grids/cards";
-@import "layouts/grids/modern";
-@import "layouts/grids/masonry";
-@import "layouts/jobs";
+@import 'header/header';
+@import 'header/slide-out-menu';
+@import 'header/menus/desktop-horizontal';
+@import 'header/menus/off-canvas';
+@import 'header/search';
+@import 'layouts/archive';
+@import 'layouts/blog';
+@import 'layouts/sidebar';
+@import 'layouts/footer';
+@import 'layouts/pages';
+@import 'layouts/posts';
+@import 'layouts/search';
+@import 'layouts/single';
+@import 'layouts/grids/cards';
+@import 'layouts/grids/modern';
+@import 'layouts/grids/masonry';
+@import 'layouts/jobs';
 
 /**
  * Tailwind Utilities

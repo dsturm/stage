@@ -3,9 +3,9 @@
     {{ $title ?? __('Current vacancies', 'stage') }}
   </div>
   <ul class="my-6 space-y-2 list-none">
-    @foreach ($items as $post)
+    @foreach ($items as $item)
     <li>
-      <x-job.item :post="$post" />
+      <x-job.item :item="$item" />
     </li>
     @endforeach
   </ul>

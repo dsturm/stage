@@ -158,7 +158,9 @@ module.exports = {
   plugins: [
     require('@tailwindcss/ui'),
     require('tailwindcss-wordpress'),
+    // require('@tailwindcss/aspect-ratio'),
     require('tailwindcss-aspect-ratio'),
+    // require('@tailwindcss/forms'),
     plugin(function({ addUtilities }) {
       const newUtilities = {
         '.scroll-smooth': {
@@ -174,4 +176,4 @@ module.exports = {
       addUtilities(newUtilities, ['responsive', 'hover']);
     }),
   ],
-}
+};

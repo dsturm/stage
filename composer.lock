@@ -4,8 +4,149 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d38e1598656b6a3389983be784f9fc9e",
+    "content-hash": "cf3ea3c8714a569499a8ed4e4d10be93",
     "packages": [
+        {
+            "name": "blade-ui-kit/blade-heroicons",
+            "version": "0.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/blade-ui-kit/blade-heroicons.git",
+                "reference": "b80c667dfe6eb5c69730e11810ca2d5d1654314a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/blade-ui-kit/blade-heroicons/zipball/b80c667dfe6eb5c69730e11810ca2d5d1654314a",
+                "reference": "b80c667dfe6eb5c69730e11810ca2d5d1654314a",
+                "shasum": ""
+            },
+            "require": {
+                "blade-ui-kit/blade-icons": "^0.5.0",
+                "illuminate/support": "^7.14|^8.0",
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^8.0|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BladeUI\\Heroicons\\BladeHeroiconsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "BladeUI\\Heroicons\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dries Vints",
+                    "email": "dries@vints.io",
+                    "homepage": "https://driesvints.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A package to easily make use of Heroicons in your Laravel Blade views.",
+            "homepage": "https://github.com/blade-ui-kit/blade-heroicons",
+            "keywords": [
+                "Heroicons",
+                "blade",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/blade-ui-kit/blade-heroicons/issues",
+                "source": "https://github.com/blade-ui-kit/blade-heroicons/tree/0.3.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/driesvints",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-11-23T21:21:12+00:00"
+        },
+        {
+            "name": "blade-ui-kit/blade-icons",
+            "version": "0.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/blade-ui-kit/blade-icons.git",
+                "reference": "d6bb74cdf0420900d14c6bc2304e28d0463dd0a9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/blade-ui-kit/blade-icons/zipball/d6bb74cdf0420900d14c6bc2304e28d0463dd0a9",
+                "reference": "d6bb74cdf0420900d14c6bc2304e28d0463dd0a9",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^7.14|^8.0",
+                "illuminate/filesystem": "^7.14|^8.0",
+                "illuminate/support": "^7.14|^8.0",
+                "illuminate/view": "^7.14|^8.0",
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^8.0|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BladeUI\\Icons\\BladeIconsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "BladeUI\\Icons\\": "src"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dries Vints",
+                    "email": "dries@vints.io",
+                    "homepage": "https://driesvints.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A package to easily make use of icons in your Laravel Blade views.",
+            "homepage": "https://github.com/blade-ui-kit/blade-icons",
+            "keywords": [
+                "blade",
+                "icons",
+                "laravel",
+                "svg"
+            ],
+            "support": {
+                "issues": "https://github.com/blade-ui-kit/blade-icons/issues",
+                "source": "https://github.com/blade-ui-kit/blade-icons"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/driesvints",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-11-05T20:40:53+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.9.1",
@@ -289,6 +430,80 @@
                 }
             ],
             "time": "2020-05-29T15:13:26+00:00"
+        },
+        {
+            "name": "foxy/foxy",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fxpio/foxy.git",
+                "reference": "fa541677948a1a765a8120653603659249c60f0f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fxpio/foxy/zipball/fa541677948a1a765a8120653603659249c60f0f",
+                "reference": "fa541677948a1a765a8120653603659249c60f0f",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.1|^2.0",
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "composer/composer": "^1.5.0|^2.0.0@dev"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Foxy\\Foxy",
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Foxy\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Pluchino",
+                    "email": "francois.pluchino@gmail.com"
+                }
+            ],
+            "description": "Fast, reliable, and secure NPM/Yarn bridge for Composer",
+            "homepage": "https://github.com/fxpio/foxy",
+            "keywords": [
+                "Bridge",
+                "asset",
+                "composer",
+                "dependency manager",
+                "nodejs",
+                "npm",
+                "package",
+                "yarn"
+            ],
+            "support": {
+                "issues": "https://github.com/fxpio/foxy/issues",
+                "source": "https://github.com/fxpio/foxy/tree/v1.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://paypal.me/francoispluchino",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/francoispluchino",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-06-06T20:12:54+00:00"
         },
         {
             "name": "fzaninotto/faker",
@@ -6157,48 +6372,112 @@
             "time": "2020-11-12T00:07:28+00:00"
         },
         {
-            "name": "zirkeldesign/circle",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:zirkeldesign/circle.git",
-                "reference": "178e367dab66c6a3bf73aa315121b40401dbffee"
+            "name": "zirkeldesign/circle-lib",
+            "version": "0.0.1",
+            "dist": {
+                "type": "path",
+                "url": "/Users/dcsturm/wrk/packages/composer/circle-lib",
+                "reference": "beb3ee1edd9ac8876dfc4506fc599336e37be160"
             },
             "require": {
-                "php": "^7.2"
+                "foxy/foxy": "^1.0.0",
+                "illuminate/filesystem": "^7.0|^8.0",
+                "illuminate/support": "^7.0|^8.0",
+                "illuminate/view": "^7.0|^8.0",
+                "log1x/acf-composer": "^1.5",
+                "log1x/navi": "^1.0",
+                "log1x/poet": "^1.1",
+                "log1x/sage-directives": "^1.1",
+                "matthiasmullie/minify": "^1.3",
+                "php": "^7.3|^8.0",
+                "zirkeldesign/sage-blade-icons": "9999999-dev"
             },
             "require-dev": {
-                "filp/whoops": "^2.7",
-                "roots/acorn": "^1.1",
+                "filp/whoops": "^2.8",
+                "roots/acorn": "dev-laravel8",
                 "squizlabs/php_codesniffer": "^3.5"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "acorn": {
                     "providers": [
-                        "ZD\\Circle\\Providers\\CircleServiceProvider"
+                        "ZD\\CircleLib\\Providers\\CircleLibServiceProvider"
                     ],
                     "aliases": {
-                        "Circle": "ZD\\Circle\\Facades\\Circle"
+                        "CircleLib": "ZD\\CircleLib\\Facades\\CircleLib"
                     }
                 }
             },
             "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
                 "psr-4": {
-                    "ZD\\Circle\\": "src/"
+                    "ZD\\CircleLib\\": "src/"
                 }
             },
             "scripts": {
                 "lint": [
-                    "phpcs --colors --ignore=index.php,vendor,resources,storage,dist --extensions=php --standard=PSR12 src"
+                    "phpcs --colors --ignore=vendor --extensions=php --standard=PSR12 ."
                 ],
                 "fix": [
-                    "phpcbf -q --ignore=index.php,vendor,resources,storage,dist --extensions=php --standard=PSR12 src",
+                    "phpcbf -q --ignore=vendort --extensions=php --standard=PSR12 .",
                     "composer lint"
                 ]
             },
-            "time": "2020-11-11T15:27:46+00:00"
+            "transport-options": {
+                "symlink": true,
+                "relative": false
+            }
+        },
+        {
+            "name": "zirkeldesign/sage-blade-icons",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zirkeldesign/sage-blade-icons.git",
+                "reference": "a54fee18ee34b49f51c6f9454f7e59a54cb2a0a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zirkeldesign/sage-blade-icons/zipball/a54fee18ee34b49f51c6f9454f7e59a54cb2a0a8",
+                "reference": "a54fee18ee34b49f51c6f9454f7e59a54cb2a0a8",
+                "shasum": ""
+            },
+            "require": {
+                "blade-ui-kit/blade-heroicons": "^0.3.1",
+                "blade-ui-kit/blade-icons": "^0.5.1",
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "roots/acorn": "dev-laravel8"
+            },
+            "default-branch": true,
+            "type": "package",
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "ZD\\SageBladeIcons\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Sturm",
+                    "email": "d.sturm@zirkeldesign.de"
+                }
+            ],
+            "description": "Use blade-ui-kit/blade-icons in roots/sage themes.",
+            "support": {
+                "issues": "https://github.com/zirkeldesign/sage-blade-icons/issues",
+                "source": "https://github.com/zirkeldesign/sage-blade-icons/tree/main"
+            },
+            "time": "2020-11-30T10:34:33+00:00"
         }
     ],
     "packages-dev": [
@@ -6333,7 +6612,7 @@
         "kirki-framework/module-editor-styles": 20,
         "kirki-framework/module-panels": 20,
         "tiny-pixel/acorn-db": 20,
-        "zirkeldesign/circle": 20
+        "zirkeldesign/circle-lib": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

@@ -49,10 +49,10 @@ class BlockEditor extends ServiceProvider
             'global.colors.main',
             'global.colors.palettes',
             'global.colors',
-        );
+		);
 
         foreach ($palettes as $palette) {
-            $colors = Arr::dot(stage_get_default($palette));
+            $colors = Arr::dot(stage_get_default($palette) ?? []);
 
             if (!empty($colors)) {
                 foreach ($colors as $id => $color) {

@@ -129,19 +129,7 @@ class Item extends Composer
         if ($tags) {
             foreach ($tags as $tag) {
                 $out     .= '<a href="' . get_tag_link($tag->term_id) . '" title="' . $tag->name . '">';
-                    $out .= '<span class="
-									inline-block
-									bg-gray-200
-									rounded-full
-									px-3
-									py-1
-									text-xs
-									font-semibold
-									text-gray-700
-									mr-2
-									my-1
-									hover:bg-primary
-									hover:text-white">#' . $tag->name . '</span>';
+                    $out .= '<span class="inline-block px-3 py-1 my-1 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full hover:bg-primary hover:text-white">#' . $tag->name . '</span>';
                 $out     .= '</a>';
             }
         }
@@ -175,15 +163,7 @@ class Item extends Composer
             }
 
             $out         .= '<div class="' . $container_classes . ' bg-primary">';
-                $out     .= '<div class="
-									absolute
-									inset-0
-									flex
-									flex-wrap
-									items-center
-									content-center
-									justify-center
-									bg-primary">';
+                $out     .= '<div class="absolute inset-0 flex flex-wrap items-center content-center justify-center bg-primary">';
                     $out .= get_svg('image', 'absolute stroke-current text-body h-24 w-24');
                 $out     .= '</div>';
             $out         .= '</div>';
